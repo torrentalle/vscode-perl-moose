@@ -11,12 +11,6 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "perl",
-            "aliases": ["Perl", "perl"],
-            "extensions": [".pm"],
-            "configuration": "./language-configuration.json"
-        }],
         "grammars": [{
             "language": "perl",
             "scopeName": "source.perl.moose",
