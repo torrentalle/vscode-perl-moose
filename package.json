@@ -1,0 +1,26 @@
+{
+    "name": "perl-moose",
+    "displayName": "Perl Moose",
+    "description": "Perl Moose support for Visual Studio Code",
+    "version": "0.0.1",
+    "publisher": "torrentalle",
+    "engines": {
+        "vscode": "^1.30.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "perl",
+            "aliases": ["Perl", "perl"],
+            "extensions": [".pm"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "perl",
+            "scopeName": "source.perl.moose",
+            "path": "./syntaxes/perl.tmLanguage.json"
+        }]
+    }
+}
