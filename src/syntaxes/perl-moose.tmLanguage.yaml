@@ -1,0 +1,7 @@
+$schema: 'https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json'
+fileTypes: []
+injectionSelector: source.perl
+name: Perl
+patterns: []
+repository: {}
+scopeName: source.perl.moose

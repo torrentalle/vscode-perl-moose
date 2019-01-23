@@ -1,20 +1,31 @@
 {
-    "name": "perl-moose",
-    "displayName": "Perl Moose",
-    "description": "Perl Moose support for Visual Studio Code",
-    "version": "0.0.1",
-    "publisher": "torrentalle",
-    "engines": {
-        "vscode": "^1.30.0"
-    },
-    "categories": [
-        "Programming Languages"
-    ],
-    "contributes": {
-        "grammars": [{
-            "language": "perl",
-            "scopeName": "source.perl.moose",
-            "path": "./syntaxes/perl.tmLanguage.json"
-        }]
-    }
+  "name": "perl-moose",
+  "displayName": "Perl Moose",
+  "description": "Perl Moose support for Visual Studio Code",
+  "version": "0.0.1",
+  "publisher": "torrentalle",
+  "engines": {
+    "vscode": "^1.30.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "injectTo": [
+          "source.perl"
+        ],
+        "scopeName": "source.perl.moose",
+        "name": "Perl Moose",
+        "path": "./syntaxes/perl-moose.tmLanguage.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "js-yaml": "^3.12.1"
+  },
+  "scripts": {
+      "generate:syntax": "js-yaml src/syntaxes/perl-moose.tmLanguage.yaml > syntaxes/perl-moose.tmLanguage.json"
+  }
 }
