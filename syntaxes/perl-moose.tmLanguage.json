@@ -1,9 +1,45 @@
 {
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "information_for_contributors": [
+    "To modify Perl Moose Textmate grammar you mus edit the file src/syntaxes/perl-moose.tmLanguage.yaml then, run following command to generate extension source code.",
+    "npm run generate:syntax"
+  ],
   "fileTypes": [],
   "injectionSelector": "source.perl",
-  "name": "Perl",
-  "patterns": [],
-  "repository": {},
+  "name": "Perl Moose",
+  "patterns": [
+    {
+      "include": "#has"
+    }
+  ],
+  "repository": {
+    "has": {
+      "name": "meta.attribute.perl",
+      "begin": "\\b(has)(\\s+([-a-zA-Z0-9_]+))?\\s*",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.other.attribute.moose.perl"
+        },
+        "2": {
+          "name": "entity.other.attribute-name.moose.perl"
+        }
+      },
+      "end": ";",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.perl"
+        }
+      },
+      "patterns": [
+        {
+          "name": "support.constant.moose.perl",
+          "match": "\\b(default)\\b(?:=>)"
+        },
+        {
+          "include": "source.perl"
+        }
+      ]
+    }
+  },
   "scopeName": "source.perl.moose"
 }
