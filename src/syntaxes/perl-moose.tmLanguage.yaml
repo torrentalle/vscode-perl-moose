@@ -13,19 +13,21 @@ patterns:
   - include: '#has'
 repository:
   has:
-    name: meta.attribute.perl
-    begin: \b(has)(\s+([-a-zA-Z0-9_]+))?\s*
+    name: meta.attribute.moose.perl
+    begin: \b(has)\s+(\+|)([-a-zA-Z0-9_]+)?\s*
     beginCaptures:
       '1':
         name: keyword.other.attribute.moose.perl
       '2':
+        name: storage.modifier.attribute.moose.perl
+      '3':
         name: entity.other.attribute-name.moose.perl
     end: ';'
     endCaptures:
       '0':
         name: punctuation.definition.string.perl
     patterns:
-      - name: support.constant.moose.perl
-        match: \b(default)\b(?:=>)
+      - name: constant.language.has.key.moose.perl
+        match: \b(is|isa|coerce|does|required|weak_ref|lazy|trigger|handles|traits|builder|default|clearer|predicate|documentation)\s*(?==>)
       - include: 'source.perl'
 scopeName: source.perl.moose
