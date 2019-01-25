@@ -26,6 +26,7 @@
     "js-yaml": "^3.12.1"
   },
   "scripts": {
+      "build": "npm run generate:syntax",
       "generate:syntax": "js-yaml src/syntaxes/perl-moose.tmLanguage.yaml > syntaxes/perl-moose.tmLanguage.json"
   }
 }
