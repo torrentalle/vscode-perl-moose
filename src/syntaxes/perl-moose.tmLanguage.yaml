@@ -10,6 +10,7 @@ fileTypes: []
 injectionSelector: source.perl
 name: Perl Moose
 patterns:
+  - include: '#perl_moose_role'
   - include: '#perl_moose'
 
 repository:
@@ -59,5 +60,28 @@ repository:
             name: entity.name.function.perl
       - match: \b(meta|super|inner|blessed|confess)\b
         name:  support.function.moose.perl
+
+  # This section contains Moose::Role related syntax
+  perl_moose_role:
+    comment: >- 
+      We look for 'use Moose::Role' sentence to add grammar additions
+      Moose scope ends when 'no Moose::Role' or 'package' is matched
+    name: meta.role.moose.perl
+    begin: (?<=use)\s+((?:Moose|Moo)::Role)[\s;]
+    beginCaptures:
+      '1':
+        name: entity.name.class.moose.perl
+    end: (\b)(?=^\s*package\s|no\s+\1$\s)
+    patterns:
+      - include: '#moose_role'
+      - include: 'source.perl'
+  moose_role:
+    name: meta.role.moose.perl
+    patterns:
+      - name: constant.language.type.modifier.moose.perl
+        match: \b(-traits)\s*(?==>)
+      - name: keyword.other.role.moose.perl
+        match: \b(requires|excludes)\b
+      - include: '#moose'
 
 scopeName: source.moose.perl
