@@ -10,24 +10,54 @@ fileTypes: []
 injectionSelector: source.perl
 name: Perl Moose
 patterns:
-  - include: '#has'
+  - include: '#perl_moose'
+
 repository:
-  has:
-    name: meta.attribute.moose.perl
-    begin: \b(has)\s+(\+|)([-a-zA-Z0-9_]+)?\s*
+  # This section contains Moose related syntax
+  perl_moose:
+    comment: >- 
+      We look for 'use Moose' sentence to add grammar additions
+      Moose scope ends when 'no Moose' or 'package' is matched
+    name: meta.moose.perl
+    begin: (?<=use)\s+(Moose|Moo)[\s;]
     beginCaptures:
       '1':
-        name: keyword.other.attribute.moose.perl
-      '2':
-        name: storage.modifier.attribute.moose.perl
-      '3':
-        name: entity.other.attribute-name.moose.perl
-    end: ';'
-    endCaptures:
-      '0':
-        name: punctuation.definition.string.perl
+        name: entity.name.class.moose.perl
+    end: (\b)(?=^\s*package\s|no\s+\1$\s)
     patterns:
-      - name: constant.language.has.key.moose.perl
-        match: \b(is|isa|coerce|does|required|weak_ref|lazy|trigger|handles|traits|builder|default|clearer|predicate|documentation)\s*(?==>)
+      - include: '#moose'
       - include: 'source.perl'
-scopeName: source.perl.moose
+  moose:
+    patterns:
+      - match: \b(-meta_name)\b
+        captures:
+          '1':
+            name: entity.other.attribute-name.moose.perl
+        name: constant.language.type.modifier.moose.perl
+      - match: \b(extends|with)(?:\s+([-a-zA-Z0-9_]+))?\s*
+        captures:
+          '1':
+            name: keyword.control.import.moose.perl
+          '2':
+            name: entity.name.class.moose.perl
+        name: keyword.control.moose.perl
+      - match: \b(has)(?:\s+(\+|)([-a-zA-Z0-9_]+))?\s*
+        captures:
+          '1':
+            name:  keyword.other.attribute.moose.perl
+          '2':
+            name: storage.modifier.attribute.moose.perl
+          '3':
+            name: entity.other.attribute-name.moose.perl
+      - match: \b(is|isa|coerce|does|required|weak_ref|lazy|trigger|handles|traits|builder|default|clearer|predicate|documentation|auto_deref|lazy_build|role_attribute)\s*(?==>)
+        name: constant.language.has.key.moose.perl        
+      - match: \b(before|after|around|override|augment)(?:\s+([-a-zA-Z0-9_]+))?
+        captures:
+          '1':
+            name: keyword.other.attribute.moose.perl
+          '2':
+            name: entity.name.function.perl
+      - match: \b(meta|super|inner|blessed|confess)\b
+        name:  support.function.moose.perl
+
+scopeName: source.moose.perl
