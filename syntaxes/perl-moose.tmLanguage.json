@@ -9,6 +9,9 @@
   "name": "Perl Moose",
   "patterns": [
     {
+      "include": "#perl_moose_type_constraint"
+    },
+    {
       "include": "#perl_moose_role"
     },
     {
@@ -90,6 +93,10 @@
         {
           "match": "\\b(meta|super|inner|blessed|confess)\\b",
           "name": "support.function.moose.perl"
+        },
+        {
+          "comment": "Moose::Util::TypeConstraints",
+          "include": "#perl_moose_type_constraint"
         }
       ]
     },
@@ -125,6 +132,80 @@
         },
         {
           "include": "#moose"
+        }
+      ]
+    },
+    "perl_moose_type_constraint": {
+      "comment": "We look for 'use Moose::Util::TypeConstraints' sentence to add grammar additions Moose scope ends when 'no Moose::Util::TypeConstraints' or 'package' is matched",
+      "begin": "(?<=use)\\s+(Moose::Util::TypeConstraints)[\\s;]",
+      "beginCaptures": {
+        "1": {
+          "name": "entity.name.class.moose.perl"
+        }
+      },
+      "end": "(\\b)(?=^\\s*package\\s|no\\s+\\1$\\s)",
+      "patterns": [
+        {
+          "include": "#moose_type_constraint"
+        },
+        {
+          "include": "$self"
+        },
+        {
+          "include": "source.perl"
+        }
+      ],
+      "name": "meta.type.constraint.moose.perl"
+    },
+    "moose_type_constraint": {
+      "patterns": [
+        {
+          "name": "keyword.control.moose.perl",
+          "match": "\\b(type|subtype|as|where|message|inline_as)\\b"
+        },
+        {
+          "name": "keyword.control.moose.perl",
+          "match": "\\b(coerce|from|via)\\b"
+        },
+        {
+          "name": "keyword.other.type.moose.perl",
+          "match": "\\b(class_type|role_type|maybe_type|duck_type|enum|union)\\b"
+        },
+        {
+          "name": "support.function.moose.perl",
+          "match": "\\b(find|register|create_(parameterized|class|role|enum|duck)|find_or_(parse|create_isa|create_does))_type_constraint\\b"
+        },
+        {
+          "name": "support.function.moose.perl",
+          "match": "\\b(normalize_type_constraint_name)\\b"
+        },
+        {
+          "name": "support.function.moose.perl",
+          "match": "\\b(create_type_constraint_union)\\b"
+        },
+        {
+          "name": "support.function.moose.perl",
+          "match": "\\b(create_named_type_constraint_union)\\b"
+        },
+        {
+          "name": "support.function.moose.perl",
+          "match": "\\b(get_type_constraint_registry)\\b"
+        },
+        {
+          "name": "support.function.moose.perl",
+          "match": "\\b(list_all_(builtin_type_constraints|type_constraints))\\b"
+        },
+        {
+          "name": "support.function.moose.perl",
+          "match": "\\b(export_type_constraints_as_functions)\\b"
+        },
+        {
+          "name": "support.function.moose.perl",
+          "match": "\\b(get_all_parameterizable_types)\\b"
+        },
+        {
+          "name": "support.function.moose.perl",
+          "match": "\\b(add_parameterizable_type)\\b"
         }
       ]
     }
