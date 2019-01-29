@@ -10,25 +10,44 @@ fileTypes: []
 injectionSelector: source.perl
 name: Perl Moose
 patterns:
-  - include: '#perl_moose_type_constraint'
-  - include: '#perl_moose_role'
-  - include: '#perl_moose'
+  - include: '#moose_packages'
 
 repository:
-  # This section contains Moose related syntax
-  perl_moose:
-    comment: >-
-      We look for 'use Moose' sentence to add grammar additions
-      Moose scope ends when 'no Moose' or 'package' is matched
-    name: meta.moose.perl
-    begin: (?<=use)\s+(Moose|Moo)[\s;]
-    beginCaptures:
-      '1':
-        name: entity.name.class.moose.perl
-    end: (\b)(?=^\s*package\s|no\s+\1$\s)
+  source:
     patterns:
-      - include: '#moose'
+      - include: '$self'
       - include: 'source.perl'
+  moose_packages:
+    patterns:
+      - name: meta.moose.perl
+        begin: (?<=use)\s+(Moose|Moo)[\s;]
+        beginCaptures:
+          '1':
+            name: entity.name.class.moose.perl
+        end: (\b)(?=^\s*package\s|no\s+\1$[\s;])
+        patterns:
+          - include: '#moose'
+          - include: '#source'
+      - name: meta.role.moose.perl
+        begin: (?<=use)\s+((?:Moose|Moo)::Role)[\s;]
+        beginCaptures:
+          '1':
+            name: entity.name.class.moose.perl
+        end: (\b)(?=^\s*package\s|no\s+\1$[\s;])
+        patterns:
+          - include: '#moose_role'
+          - include: '#source'
+      - name: meta.type.constraint.moose.perl
+        begin: (?<=use)\s+(Moose::Util::TypeConstraints)[\s;]
+        beginCaptures:
+          '1':
+            name: entity.name.class.moose.perl
+        end: (\b)(?=^\s*package\s|no\s+\1$[\s;])
+        patterns:
+          - include: '#moose_type_constraint'
+          - include: '#source'
+
+  # This section contains Moose related syntax
   moose:
     patterns:
       - match: \b(-meta_name)\b
@@ -61,23 +80,8 @@ repository:
             name: entity.name.function.perl
       - match: \b(meta|super|inner|blessed|confess)\b
         name:  support.function.moose.perl
-      - comment: Moose::Util::TypeConstraints
-        include: '#perl_moose_type_constraint'
 
   # This section contains Moose::Role related syntax
-  perl_moose_role:
-    comment: >-
-      We look for 'use Moose::Role' sentence to add grammar additions
-      Moose scope ends when 'no Moose::Role' or 'package' is matched
-    name: meta.role.moose.perl
-    begin: (?<=use)\s+((?:Moose|Moo)::Role)[\s;]
-    beginCaptures:
-      '1':
-        name: entity.name.class.moose.perl
-    end: (\b)(?=^\s*package\s|no\s+\1$\s)
-    patterns:
-      - include: '#moose_role'
-      - include: 'source.perl'
   moose_role:
     name: meta.role.moose.perl
     patterns:
@@ -88,20 +92,6 @@ repository:
       - include: '#moose'
 
   # This section contains Moose::Util::TypeConstraints related syntax
-  perl_moose_type_constraint:
-    comment: >- 
-      We look for 'use Moose::Util::TypeConstraints' sentence to add grammar additions
-      Moose scope ends when 'no Moose::Util::TypeConstraints' or 'package' is matched
-    begin: (?<=use)\s+(Moose::Util::TypeConstraints)[\s;]
-    beginCaptures:
-      '1':
-        name: entity.name.class.moose.perl
-    end: (\b)(?=^\s*package\s|no\s+\1$\s)
-    patterns:
-      - include: '#moose_type_constraint'
-      - include: '$self'
-      - include: 'source.perl'
-    name: meta.type.constraint.moose.perl
   moose_type_constraint:
     patterns:
       - name: keyword.control.moose.perl
