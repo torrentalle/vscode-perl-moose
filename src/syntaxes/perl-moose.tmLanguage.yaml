@@ -97,7 +97,9 @@ repository:
       - name: keyword.control.moose.perl
         match: \b(type|subtype|as|where|message|inline_as)\b
       - name: keyword.control.moose.perl
-        match: \b(coerce|from|via)\b
+        match: (?<!->)\b(coerce)\b
+      - name: keyword.control.moose.perl
+        match: \b(from|via)\b
       - name:  keyword.other.type.moose.perl
         match: \b(class_type|role_type|maybe_type|duck_type|enum|union)\b
       - name:  support.function.moose.perl
