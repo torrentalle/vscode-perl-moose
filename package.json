@@ -25,6 +25,7 @@
   "devDependencies": {
 		"@types/mocha": "^5.2.0",
 		"@types/node": "^8.0.0",
+    "typescript": "^2.7.2",
     "js-yaml": "^3.12.1",
     "vscode": "^1.1.21"
   },
