@@ -935,6 +935,17 @@
 		}
 	},
 	{
+		"c": " ",
+		"t": "source.perl meta.role.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
 		"c": "'",
 		"t": "source.perl meta.role.moose.perl string.quoted.single.perl punctuation.definition.string.begin.perl",
 		"r": {
@@ -946,7 +957,7 @@
 		}
 	},
 	{
-		"c": "test_traits",
+		"c": "TestMooseRoleTraits",
 		"t": "source.perl meta.role.moose.perl string.quoted.single.perl",
 		"r": {
 			"dark_plus": "string: #CE9178",
@@ -1386,7 +1397,7 @@
 		}
 	},
 	{
-		"c": "TestMooseRoleTraits",
+		"c": "TestMooseRoleMoose",
 		"t": "source.perl meta.class.perl entity.name.type.class.perl",
 		"r": {
 			"dark_plus": "entity.name.type: #4EC9B0",

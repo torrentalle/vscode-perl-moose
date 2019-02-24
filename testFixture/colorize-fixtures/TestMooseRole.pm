@@ -39,7 +39,7 @@ requires;
 # Pattern: -meta_name
 package TestMooseRoleTraits {
     # Assert: entity.other.attribute-name.moose.perl
-    use Moose::Role -traits =>'test_traits';
+    use Moose::Role -traits => 'TestMooseRoleTraits';
 }
 
 # Pattern: requires/excludes
@@ -54,7 +54,7 @@ package TestMooseRoleRequires {
 }
 
 # Pattern: moose
-package TestMooseRoleTraits {
+package TestMooseRoleMoose {
     use Moose::Role;
 
     # Assert: keyword.other.attribute.moose.perl string.quoted.single.perl
