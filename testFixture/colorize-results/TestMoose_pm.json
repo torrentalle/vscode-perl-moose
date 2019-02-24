@@ -2310,7 +2310,7 @@
 		}
 	},
 	{
-		"c": " Repository: moose_packages                  #",
+		"c": " Repository: moose                           #",
 		"t": "source.perl comment.line.number-sign.perl",
 		"r": {
 			"dark_plus": "comment: #6A9955",

@@ -70,7 +70,7 @@ has;
 
 ###############################################
 # Test:       Moose syntax is colorized       #
-# Repository: moose_packages                  #
+# Repository: moose                           #
 ###############################################
 
 # Pattern: -meta_name
