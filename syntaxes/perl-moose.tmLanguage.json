@@ -159,7 +159,7 @@
       "patterns": [
         {
           "name": "keyword.control.moose.perl",
-          "match": "\\b(type|subtype|as|where|message|inline_as)\\b"
+          "match": "\\b(type|subtype|as|where|message|inline_as|match_on_type)\\b"
         },
         {
           "name": "keyword.control.moose.perl",
