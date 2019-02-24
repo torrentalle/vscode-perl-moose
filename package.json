@@ -23,10 +23,15 @@
     ]
   },
   "devDependencies": {
-    "js-yaml": "^3.12.1"
+		"@types/mocha": "^5.2.0",
+		"@types/node": "^8.0.0",
+    "js-yaml": "^3.12.1",
+    "vscode": "^1.1.21"
   },
   "scripts": {
-      "build": "npm run generate:syntax",
-      "generate:syntax": "js-yaml src/syntaxes/perl-moose.tmLanguage.yaml > syntaxes/perl-moose.tmLanguage.json"
+      "build": "npm run generate:syntax && tsc -p tsconfig.json",
+      "generate:syntax": "js-yaml src/syntaxes/perl-moose.tmLanguage.yaml > syntaxes/perl-moose.tmLanguage.json",
+      "prepare": "node ./node_modules/vscode/bin/install",
+      "test": "node ./node_modules/vscode/bin/test"
   }
 }
