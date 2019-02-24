@@ -70,15 +70,15 @@ repository:
             name: storage.modifier.attribute.moose.perl
           '3':
             name: entity.other.attribute-name.moose.perl
-      - match: \b(is|isa|coerce|does|required|weak_ref|lazy|trigger|handles|traits|builder|default|clearer|predicate|documentation|auto_deref|lazy_build|role_attribute)\s*(?==>)
-        name: constant.language.has.key.moose.perl        
+      - match: \b(auto_deref|builder|clearer|coerce|default|documentation|does|handles|is|isa|lazy|lazy_build|metaclass|predicate|required|role_attribute|traits|trigger|weak_ref)\s*(?==>)
+        name: constant.language.has.key.moose.perl
       - match: \b(before|after|around|override|augment)(?:\s+([-a-zA-Z0-9_]+))?
         captures:
           '1':
             name: keyword.other.attribute.moose.perl
           '2':
             name: entity.name.function.perl
-      - match: \b(meta|super|inner|blessed|confess)\b
+      - match: \b(blessed|confess|inner|meta|super)\b
         name:  support.function.moose.perl
 
   # This section contains Moose::Role related syntax
