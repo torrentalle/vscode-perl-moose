@@ -24,7 +24,7 @@ repository:
         beginCaptures:
           '1':
             name: entity.name.class.moose.perl
-        end: (\b)(?=^\s*package\s|no\s+\1$[\s;])
+        end: (\b)(?=^\s*package\s|no\s+\1[\s;])
         patterns:
           - include: '#moose'
           - include: '#source'
@@ -33,7 +33,7 @@ repository:
         beginCaptures:
           '1':
             name: entity.name.class.moose.perl
-        end: (\b)(?=^\s*package\s|no\s+\1$[\s;])
+        end: (\b)(?=^\s*package\s|no\s+\1[\s;])
         patterns:
           - include: '#moose_role'
           - include: '#source'
@@ -42,7 +42,7 @@ repository:
         beginCaptures:
           '1':
             name: entity.name.class.moose.perl
-        end: (\b)(?=^\s*package\s|no\s+\1$[\s;])
+        end: (\b)(?=^\s*package\s|no\s+\1[\s;])
         patterns:
           - include: '#moose_type_constraint'
           - include: '#source'
