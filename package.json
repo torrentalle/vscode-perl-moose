@@ -16,7 +16,7 @@
         "injectTo": [
           "source.perl"
         ],
-        "scopeName": "source.moose.perl",
+        "scopeName": "source.perl.moose",
         "name": "Perl Moose",
         "path": "./syntaxes/perl-moose.tmLanguage.json"
       }

@@ -121,4 +121,4 @@ repository:
       - name:  support.function.moose.perl
         match: \b(add_parameterizable_type)\b
 
-scopeName: source.moose.perl
+scopeName: source.perl.moose
