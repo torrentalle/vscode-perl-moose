@@ -7,7 +7,7 @@ information_for_contributors:
   - npm run generate:syntax
 
 fileTypes: []
-injectionSelector: source.perl
+injectionSelector: L:source.perl -comment -string -text
 name: Perl Moose
 patterns:
   - include: '#moose_packages'
