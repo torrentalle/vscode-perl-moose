@@ -1,65 +1,47 @@
-# perl-moose README
+# Perl Moose Extension for VS Code
 
-This is the README for your extension "perl-moose". After writing up a brief description, we recommend including the following sections.
+[![Build Status](https://travis-ci.org/torrentalle/vscode-perl-moose.svg?branch=master)](https://travis-ci.org/torrentalle/vscode-perl-moose.svg?branch=master)
+
+Visual Studio Code support for Perl [Moose](https://metacpan.org/pod/Moose) and [Moo](https://metacpan.org/pod/Moo).
+
+This extension is developed following [Moose::Cookbook::Snack::Keywords](https://metacpan.org/pod/distribution/Moose/lib/Moose/Cookbook/Snack/Keywords.pod)
+guidelines with some additions
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+This extensions includes Syntax Highlight for:
 
-For example if there is an image subfolder under your extension project workspace:
+* **Moose** and **Moo**
+* **Moose::Role**
+* **Moose::Util::TypeConstraints**
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+![Syntax Highlight](images/grammar.png)
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+See [CHANGELOG.md](CHANGELOG.md) to see latest changes
 
-### 1.0.0
+## Contributing
 
-Initial release of ...
+The main grammar is stored in [syntaxes/perl-moose.tmLanguage.json](syntaxes/perl-moose.tmLanguage.json).
+This file is generated from [src/syntaxes/perl-moose.tmLanguage.yaml](src/syntaxes/perl-moose.tmLanguage.yaml):
 
-### 1.0.1
+## Building
 
-Fixed issue #.
+To generate the main grammar:
 
-### 1.1.0
+```bash
+$ npm install
+$ npm run build
+```
 
-Added features X, Y, and Z.
+## Testing
 
------------------------------------------------------------------------------------------------------------
+To run the grammar tests:
 
-## Working with Markdown
+```bash
+$ npm run test
+```
+The test cases are stored as markdown files under `testFixture/colorize-fixtures`. Grammar test results are stored under `testFixture/colorize-results`, which are automatically generated from the fixtures.
 
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+To test the grammar in VS Code, select the `Extension Tests` configuration in the VS Code debugger and run.
