@@ -50,7 +50,7 @@ repository:
   # This section contains Moose related syntax
   moose:
     patterns:
-      - match: \b(-meta_name)\b
+      - match: \s*(-meta_name)\b
         captures:
           '1':
             name: entity.other.attribute-name.moose.perl
