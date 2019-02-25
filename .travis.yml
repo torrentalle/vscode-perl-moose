@@ -1,23 +1,57 @@
 sudo: false
+
 language: node_js
 node_js:
-  - "8"
+- "8"
 
 os:
-  - linux
-  - osx
-  - windows
+- linux
+- osx
+- windows
+
+branches:
+  only:
+  - master
+  - /v?[0-9]+\.[0-9]+\.[0-9]+(.*)?/
+
+env:
+  global:
+  - ISPRODTAG=^v?[0-9]+\.[0-9]+\.[0-9]+$
 
 before_install:
-  - if [ $TRAVIS_OS_NAME == "linux" ]; then
-      export CXX="g++-4.9" CC="gcc-4.9" DISPLAY=:99.0;
-      sh -e /etc/init.d/xvfb start;
-      sleep 3;
-    fi
+- if [ $TRAVIS_OS_NAME == "linux" ]; then
+    export CXX="g++-4.9" CC="gcc-4.9" DISPLAY=:99.0;
+    sh -e /etc/init.d/xvfb start;
+    sleep 3;
+  fi
 
 install:
-  - npm install
-  - npm run build
+- npm install  
 
 script:
+- npm run build
 - npm test --silent
+
+after_success:
+- npm run  package
+
+deploy:
+  # deploy to github release
+  - provider: releases
+    api_key: $GITHUB_TOKEN
+    file_glob: true
+    file: "*.vsix"
+    skip_cleanup: true
+    on:
+      tags: true
+      all_branches: true
+      condition: "$TRAVIS_OS_NAME == linux"
+  # # deploy to vscode extension market
+  # - provider: script  
+  #   script: vsce publish -p $VSCE_TOKEN --packagePath *.vsix
+  #   skip_cleanup: true
+  #   on:
+  #     tags: true
+  #     all_branches: true
+  #     # if it's a PROD tag (something like 1.0.0), then publish extension to market.
+  #     condition: "$TRAVIS_OS_NAME == linux && $TRAVIS_TAG =~ $ISPRODTAG"
