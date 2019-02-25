@@ -8,6 +8,7 @@
     "type" : "git",
     "url" : "https://github.com/torrentalle/vscode-perl-moose"
   },
+  "license": "MIT",
   "engines": {
     "vscode": "^1.30.0"
   },

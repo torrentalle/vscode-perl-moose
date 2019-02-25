@@ -45,3 +45,7 @@ $ npm run test
 The test cases are stored as markdown files under `testFixture/colorize-fixtures`. Grammar test results are stored under `testFixture/colorize-results`, which are automatically generated from the fixtures.
 
 To test the grammar in VS Code, select the `Extension Tests` configuration in the VS Code debugger and run.
+
+## License
+
+This extension is distributed under [MIT](LICENSE.md)
