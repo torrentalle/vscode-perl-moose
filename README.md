@@ -1,6 +1,6 @@
 # Perl Moose Extension for VS Code
 
-[![Build Status](https://travis-ci.org/torrentalle/vscode-perl-moose.svg?branch=master)](https://travis-ci.org/torrentalle/vscode-perl-moose.svg?branch=master)
+[![Build Status](https://travis-ci.org/torrentalle/vscode-perl-moose.svg?branch=master)](https://travis-ci.org/torrentalle/vscode-perl-moose)
 
 Visual Studio Code support for Perl [Moose](https://metacpan.org/pod/Moose) and [Moo](https://metacpan.org/pod/Moo).
 
