@@ -2,7 +2,7 @@
   "name": "perl-moose",
   "displayName": "Perl Moose",
   "description": "Perl Moose support for Visual Studio Code",
-  "version": "1.0.0-rc",
+  "version": "1.0.0-rc1",
   "publisher": "torrentalle",
   "repository": {
     "type": "git",
