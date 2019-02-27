@@ -25,7 +25,7 @@ install:
 before_script:
   - npm run build
 script:
-  - npm test --silent'
+  - npm test --silent
 jobs:
   include:
     - stage: GitHub Release
@@ -34,7 +34,7 @@ jobs:
         - npm install vsce
         - npm run package
       os: linux
-      is: tag IS present
+      if: tag IS present
       deploy:
         # deploy to github release
         - provider: releases
