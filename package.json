@@ -36,7 +36,7 @@
   },
   "scripts": {
     "version": "echo $npm_package_version",
-    "build": "npm run generate:syntax && tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json",
     "generate:syntax": "js-yaml src/syntaxes/perl-moose.tmLanguage.yaml > syntaxes/perl-moose.tmLanguage.json",
     "prepare": "node ./node_modules/vscode/bin/install",
     "test": "node ./node_modules/vscode/bin/test",

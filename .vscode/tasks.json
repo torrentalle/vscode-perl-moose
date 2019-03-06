@@ -4,13 +4,25 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "build",
+      "label": "build_typescript",
       "type": "npm",
       "script": "build",
       "group": {
         "kind": "build",
         "isDefault": true
       }
+    },
+    {
+      "label": "generate_syntax",
+      "type": "npm",
+      "script": "generate:syntax"
+    },
+    {
+      "label": "Build",
+      "dependsOn": [
+        "generate_syntax",
+        "build_typescript"
+      ]
     }
   ]
 }

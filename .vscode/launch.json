@@ -10,7 +10,7 @@
             "type": "extensionHost",
             "request": "launch",
             "runtimeExecutable": "${execPath}",
-            "preLaunchTask": "build",
+            "preLaunchTask": "Build",
             "args": [
                 "--disable-extensions",
                 "--extensionDevelopmentPath=${workspaceFolder}"
@@ -20,7 +20,7 @@
             "name": "Extension Tests",
             "type": "extensionHost",
             "request": "launch",
-            "preLaunchTask": "build",
+            "preLaunchTask": "Build",
             "runtimeExecutable": "${execPath}",
             "args": [
                 "--disable-extensions",
