@@ -1,6 +1,19 @@
+# Source files
+src/**
+typings/**
+testFixture/**
+out/test/**
+
+# VSCode files
+.gitignore
 .vscode/**
 .vscode-test/**
-.gitignore
-vsc-extension-quickstart.md
-out/test/**
+
+# Test files
+
+# Build files
 *.vsix
+tsconfig.json
+**/*.map
+**/tslint.json
+vsc-extension-quickstart.md
