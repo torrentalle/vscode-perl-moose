@@ -1,55 +1,37 @@
 sudo: false
+dist: xenial
 language: node_js
-node_js:
-  - "8"
-os:
-  - linux
-  - osx
-  - windows
-branches:
-  only:
-    - master
-    - /v?[0-9]+\.[0-9]+\.[0-9]+(.*)?/
-env:
-  global:
-    - ISPRODTAG=^v?[0-9]+\.[0-9]+\.[0-9]+$
-    - RUN_TESTS=true
-before_install:
-  - if [ $TRAVIS_OS_NAME == "linux" ]; then
-      export CXX="g++-4.9" CC="gcc-4.9" DISPLAY=:99.0;
-      sh -e /etc/init.d/xvfb start;
-      sleep 3;
-    fi
-install:
-  - npm install
-before_script:
-  - npm run build
-script:
-  - npm test --silent
+node_js: "11.0.0"
+stages:
+  - test
+  - release
+
 jobs:
   include:
-    - stage: GitHub Release
-      name: "Create VSIX package"
-      script:
-        - npm install vsce
-        - npm run package
-      os: linux
-      if: tag IS present
+    - stage: test
+      name: "Test VSCode Extension"
+      install: npm install
+      before_script: npm run build
+      script: xvfb-run npm test --silent
+
+    - &release
+      stage: release
+      name: "Publish GitHub Release"
+      if: tag =~ /^v?[0-9]+\.[0-9]+\.[0-9]+$/
+      before_install: npm install -g vsce
+      install: npm install --production
+      script:  vsce package
+      deploy: &github
+        provider: releases
+        api_key: $GITHUB_TOKEN
+        file_glob: true
+        file: "*.vsix"
+        skip_cleanup: true
+        on:
+          tags: true
+    - <<: *release
+      name: "Publish GitHub Pre-release"
+      if: tag =~ /^v?[0-9]+\.[0-9]+\.[0-9]+.+$/
       deploy:
-        # deploy to github release
-        - provider: releases
-          api_key: $GITHUB_TOKEN
-          file_glob: true
-          file: "*.vsix"
-          skip_cleanup: true
-          on:
-            tags: true
-  # # # deploy to vscode extension market
-  # # - provider: script  
-  # #   script: vsce publish -p $VSCE_TOKEN --packagePath *.vsix
-  # #   skip_cleanup: true
-  # #   on:
-  # #     tags: true
-  # #     all_branches: true
-  # #     # if it's a PROD tag (something like 1.0.0), then publish extension to market.
-  # #     condition: "$TRAVIS_OS_NAME == linux && $TRAVIS_TAG =~ $ISPRODTAG"
+        <<: *github
+        prerelease: true
