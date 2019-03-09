@@ -3,6 +3,7 @@ src/**
 typings/**
 testFixture/**
 out/test/**
+images/*.svg
 
 # VSCode files
 .gitignore
