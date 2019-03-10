@@ -23,7 +23,6 @@
           "source.perl"
         ],
         "scopeName": "source.perl.moose",
-        "name": "Perl Moose",
         "path": "./syntaxes/perl-moose.tmLanguage.json"
       }
     ]
@@ -41,6 +40,10 @@
     "generate:syntax": "js-yaml src/syntaxes/perl-moose.tmLanguage.yaml > syntaxes/perl-moose.tmLanguage.json",
     "prepare": "node ./node_modules/vscode/bin/install",
     "test": "node ./node_modules/vscode/bin/test",
-    "package": "vsce package"
+    "package:generate": "vsce package",
+    "package:env": "mkdir -p .vscode-test && echo \"export CODE_TESTS_DATA_DIR=$(pwd)/.vscode-test \nexport CODE_EXTENSIONS_PATH=$(pwd)/testFixture/empty-extension \n#export CODE_TESTS_WORKSPACE=--extensions-dir=$(pwd)/.vscode-test/extensions\" > .vscode-test/env",
+    "package:vscode": "npm run package:env --silent && . .vscode-test/env && CODE_TESTS_PATH=$(pwd)/out/test/vscode npm run test --silent",
+    "package:install": "npm run package:env --silent && . .vscode-test/env && bash .vscode-test/stable/VSCode-linux-x64/bin/code $CODE_TESTS_WORKSPACE --install-extension=$npm_package_name-$npm_package_version.vsix",
+    "package:test": "npm run package:env --silent && . .vscode-test/env && CODE_TESTS_PATH=$(pwd)/out/test npm run test --silent"
   }
 }
