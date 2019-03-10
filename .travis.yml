@@ -20,7 +20,7 @@ jobs:
       if: tag =~ /^v?[0-9]+\.[0-9]+\.[0-9]+$/
       before_install: npm install -g vsce
       install: npm install --production
-      script:  vsce package
+      script:  npm run package:generate
       deploy: &github
         provider: releases
         api_key: $GITHUB_TOKEN
@@ -35,3 +35,17 @@ jobs:
       deploy:
         <<: *github
         prerelease: true
+    - stage: test relase
+      name: "Test Extension Package"
+      if: tag =~ /^v?[0-9]+\.[0-9]+\.[0-9]+/
+      before_install:
+        - npm install
+        - npm run build
+        - export PKG_VERSION=$(npm run version --silent)
+      install:
+        - npm run package:vscode
+        - wget https://github.com/torrentalle/vscode-perl-moose/releases/download/$TRAVIS_TAG/perl-moose-$PKG_VERSION.vsix
+      before_script:
+        - npm run package:install
+      script:
+        - npm run package:test
