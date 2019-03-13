@@ -2,10 +2,7 @@
 
 [![Build Status](https://travis-ci.org/torrentalle/vscode-perl-moose.svg?branch=master)](https://travis-ci.org/torrentalle/vscode-perl-moose)
 
-Visual Studio Code support for Perl [Moose](https://metacpan.org/pod/Moose) and [Moo](https://metacpan.org/pod/Moo).
-
-This extension is developed following [Moose::Cookbook::Snack::Keywords](https://metacpan.org/pod/distribution/Moose/lib/Moose/Cookbook/Snack/Keywords.pod)
-guidelines with some additions
+Perl [Moose](https://metacpan.org/pod/Moose) syntax highlight support for Visual Studio Code  
 
 ![Syntax Highlight](images/grammar.png)
 
@@ -46,6 +43,10 @@ npm run test
 The test cases are stored as markdown files under `testFixture/colorize-fixtures`. Grammar test results are stored under `testFixture/colorize-results`, which are automatically generated from the fixtures.
 
 To test the grammar in VS Code, select the `Extension Tests` configuration in the VS Code debugger and run.
+
+## References
+
+* [Moose::Cookbook::Snack::Keywords](https://metacpan.org/pod/distribution/Moose/lib/Moose/Cookbook/Snack/Keywords.pod) - Restricted "keywords" in Moose
 
 ## License
 

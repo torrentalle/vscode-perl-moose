@@ -8,12 +8,20 @@
     "type": "git",
     "url": "https://github.com/torrentalle/vscode-perl-moose"
   },
+  "bugs": {
+    "url": "https://github.com/torrentalle/vscode-perl-moose/issues"
+  },
   "license": "MIT",
   "engines": {
     "vscode": "^1.30.0"
   },
   "categories": [
     "Programming Languages"
+  ],
+  "keywords": [
+    "Perl::Moose",
+    "perl", 
+    "moose"
   ],
   "icon": "images/moose.png",
   "contributes": {
