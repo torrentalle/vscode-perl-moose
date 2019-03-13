@@ -2,7 +2,7 @@
   "name": "perl-moose",
   "displayName": "Perl Moose",
   "description": "Perl Moose support for Visual Studio Code",
-  "version": "1.0.0-rc2",
+  "version": "1.0.0",
   "publisher": "torrentalle",
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
   },
   "license": "MIT",
   "engines": {
-    "vscode": "^1.30.0"
+    "vscode": "^1.21.0"
   },
   "categories": [
     "Programming Languages"
@@ -43,15 +43,11 @@
     "vscode": "^1.1.21"
   },
   "scripts": {
-    "version": "echo $npm_package_version",
-    "build": "tsc -p tsconfig.json",
-    "generate:syntax": "js-yaml src/syntaxes/perl-moose.tmLanguage.yaml > syntaxes/perl-moose.tmLanguage.json",
-    "prepare": "node ./node_modules/vscode/bin/install",
-    "test": "node ./node_modules/vscode/bin/test",
-    "package:generate": "vsce package",
-    "package:env": "mkdir -p .vscode-test && echo \"export CODE_TESTS_DATA_DIR=$(pwd)/.vscode-test \nexport CODE_EXTENSIONS_PATH=$(pwd)/testFixture/empty-extension \n#export CODE_TESTS_WORKSPACE=--extensions-dir=$(pwd)/.vscode-test/extensions\" > .vscode-test/env",
-    "package:vscode": "npm run package:env --silent && . .vscode-test/env && CODE_TESTS_PATH=$(pwd)/out/test/vscode npm run test --silent",
-    "package:install": "npm run package:env --silent && . .vscode-test/env && bash .vscode-test/stable/VSCode-linux-x64/bin/code $CODE_TESTS_WORKSPACE --install-extension=$npm_package_name-$npm_package_version.vsix",
-    "package:test": "npm run package:env --silent && . .vscode-test/env && CODE_TESTS_PATH=$(pwd)/out/test npm run test --silent"
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "build": "tsc -p tsconfig.json && npm run build:syntax --silent",
+    "build:syntax": "js-yaml src/syntaxes/perl-moose.tmLanguage.yaml > syntaxes/perl-moose.tmLanguage.json",
+    "test": "CODE_DISABLE_EXTENSIONS=1 node ./node_modules/vscode/bin/test",
+    "test:package": "node ./scripts/test-package.js",
+    "version": "node -p \"require('./package.json').version\""
   }
 }
