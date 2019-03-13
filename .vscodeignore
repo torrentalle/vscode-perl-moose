@@ -1,4 +1,5 @@
 # Source files
+scripts/**
 src/**
 typings/**
 testFixture/**
@@ -9,8 +10,6 @@ images/*.svg
 .gitignore
 .vscode/**
 .vscode-test/**
-
-# Test files
 
 # Build files
 *.vsix

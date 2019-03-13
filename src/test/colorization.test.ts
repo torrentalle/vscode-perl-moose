@@ -1,10 +1,8 @@
-// @ts-check
-'use strict';
+import * as assert from 'assert';
+import { commands, Uri } from 'vscode';
+import { join, basename, normalize, dirname } from 'path';
+import * as fs from 'fs';
 
-const assert = require('assert');
-const { commands, Uri } = require('vscode');
-const { join, basename, normalize, dirname } = require('path');
-const fs = require('fs');
 
 function assertUnchangedTokens(testFixurePath, done) {
     let fileName = basename(testFixurePath);
@@ -56,8 +54,8 @@ function hasThemeChange(d, p) {
     return false;
 };
 
-suite('colorization', () => {
-    let extensionColorizeFixturePath = join(__dirname, '../../', 'testFixture/', 'colorize-fixtures');
+suite('Colorization', () => {
+    let extensionColorizeFixturePath = normalize(join(__dirname, '../../', 'testFixture/', 'colorize-fixtures'));
     if (fs.existsSync(extensionColorizeFixturePath)) {
         let fixturesFiles = fs.readdirSync(extensionColorizeFixturePath);
         fixturesFiles.forEach(fixturesFile => {
