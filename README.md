@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/torrentalle/vscode-perl-moose.svg?branch=master)](https://travis-ci.org/torrentalle/vscode-perl-moose)
 
-Perl [Moose](https://metacpan.org/pod/Moose) syntax highlight support for Visual Studio Code  
+[Perl Moose](https://metacpan.org/pod/Moose) syntax highlight support for Visual Studio Code  
 
 ![Syntax Highlight](images/grammar.png)
 
