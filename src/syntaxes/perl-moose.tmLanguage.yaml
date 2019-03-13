@@ -6,9 +6,9 @@ information_for_contributors:
     command to generate extension source code.
   - npm run generate:syntax
 
-fileTypes: []
+#fileTypes: []
 injectionSelector: L:source.perl -comment -string -text
-name: Perl Moose
+#name: Perl Moose
 patterns:
   - include: '#moose_packages'
 

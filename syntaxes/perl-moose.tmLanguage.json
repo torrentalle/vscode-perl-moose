@@ -4,9 +4,7 @@
     "To modify Perl Moose Textmate grammar you mus edit the file src/syntaxes/perl-moose.tmLanguage.yaml then, run following command to generate extension source code.",
     "npm run generate:syntax"
   ],
-  "fileTypes": [],
   "injectionSelector": "L:source.perl -comment -string -text",
-  "name": "Perl Moose",
   "patterns": [
     {
       "include": "#moose_packages"
