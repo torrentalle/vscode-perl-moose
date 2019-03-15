@@ -20,7 +20,7 @@ repository:
   moose_packages:
     patterns:
       - name: meta.moose.perl
-        begin: (?<=use)\s+(Moose|Moo)(?=[\s;])
+        begin: (?<=use)\s+(Moose|Mouse|Moo)(?=[\s;])
         beginCaptures:
           '1':
             name: entity.name.class.moose.perl
@@ -29,7 +29,7 @@ repository:
           - include: '#moose'
           - include: '#source'
       - name: meta.role.moose.perl
-        begin: (?<=use)\s+((?:Moose|Moo)::Role)(?=[\s;])
+        begin: (?<=use)\s+((?:Moose|Mouse|Moo)::Role)(?=[\s;])
         beginCaptures:
           '1':
             name: entity.name.class.moose.perl
@@ -38,7 +38,7 @@ repository:
           - include: '#moose_role'
           - include: '#source'
       - name: meta.type.constraint.moose.perl
-        begin: (?<=use)\s+(Moose::Util::TypeConstraints)(?=[\s;])
+        begin: (?<=use)\s+(Moose|Mouse::Util::TypeConstraints)(?=[\s;])
         beginCaptures:
           '1':
             name: entity.name.class.moose.perl
