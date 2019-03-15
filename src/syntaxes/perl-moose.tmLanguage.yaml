@@ -38,7 +38,7 @@ repository:
           - include: '#moose_role'
           - include: '#source'
       - name: meta.type.constraint.moose.perl
-        begin: (?<=use)\s+(Moose|Mouse::Util::TypeConstraints)(?=[\s;])
+        begin: (?<=use)\s+((?:Moose|Mouse)::Util::TypeConstraints)(?=[\s;])
         beginCaptures:
           '1':
             name: entity.name.class.moose.perl
