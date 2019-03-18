@@ -26,6 +26,7 @@ suite('Perl Moose Extension', () => {
     
     delete packageData.extensionLocation
     delete packageData.id
+    delete packageData.uuid
     delete packageData.identifier
     delete packageData.isBuiltin
     delete packageData.isUnderDevelopment
