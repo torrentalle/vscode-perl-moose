@@ -10,9 +10,9 @@
 
 This extensions includes Syntax Highlight for:
 
-* **Moose** and **Moo**
-* **Moose::Role**
-* **Moose::Util::TypeConstraints**
+* **Moose**, **Mouse** and **Moo**
+* **Moose::Role** and **Mouse::Role**
+* **Moose::Util::TypeConstraints** and **Mouse::Util::TypeConstraints**
 
 ## Release Notes
 
