@@ -14,7 +14,7 @@ jobs:
         - xvfb-run npm run test:package
       before_deploy:
         - export PACKAGE_FILE=perl-moose-$(npm run version --silent).vsix
-        - export TRAVIS_TAG=${TRAVIS_TAG:-$TRAVIS_BRANCH}
+        - export TRAVIS_TAG=${TRAVIS_TAG:-dev-$TRAVIS_BRANCH}
       deploy:
         - &github
           provider: releases
