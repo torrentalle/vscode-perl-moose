@@ -3,6 +3,12 @@ All notable changes to the "perl-moose" extension will be documented in this fil
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+
+## [0.1.1] - 2019-03-23
+
+- Support for Mouse
+
+
 ## [0.1.0] - 2019-03-13
 
 - Initial release
