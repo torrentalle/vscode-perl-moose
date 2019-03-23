@@ -1,61 +1,33 @@
-sudo: false
-dist: xenial
 language: node_js
-node_js: "11.0.0"
-stages:
-  - test
-  - release
-  - test release
+node_js: 10
 
 jobs:
   include:
-    - stage: test
-      name: "Test VSCode Extension"
-      install: npm install
-      before_script: npm run build
-      script: xvfb-run npm test --silent
-
-    - &release
-      stage: release
-      name: "Publish GitHub Release"
-      if: tag =~ /^v?[0-9]+\.[0-9]+\.[0-9]+$/
-      install: npm install -g vsce
-      script:  vsce package
-      deploy: &github
-        provider: releases
-        api_key:
-          secure: l8RvVwO5mDdvvf9gdSNkX7TDBOpd6TAvLepgBJgj7KAf9DFAxt9FoGLerUPed4QaTRCAwuitWcG2CpZR4j8+ZMgEdu1KGVlI20WmvnESxRQemwwkLX8hEU47u9VjRpn2d2seloU47vclsj3Bh/zF5PR+1ccWpf3HLYz2KPT7F7PlBBxpAy3XT08ZuN9Dnitiz2dczillB+viEIs8mbW94K5BfaJcYNY+y4lxC9++r8KfIfNvubzwJmUtfC0CBUYRQciy59yNblmFd6PzBYXlk7ZG/LEmpCrYYLPoVRYB2kSHB8fFAasrENxiUVpgOuMmYKKpmKRYMuBic6dwBUMucwTgKFR9tLKNoJbavb5gTK6RPoDR7oD5TXXzflUZRbuwd7Kvt+6imSnFMu0Nrt34RvT3teAybdmBB2HTJ+GNIvBjBz/R2WTb1E/jRIvQ7l0IRBZ0C6ZO4jLnI980QZA5dmmRRvTg2/QIkgQ+4tHfNYyPbZlVhnO2L5J1JTo520yuQFqzKNtTUdfpeP3vX2gFJr0oNnK04lNBqwWkRA5dFdT4dX7xeREGR6CvYyXUdqVzBxv1Tc7gaVH58zPpgtXlzg2S0a2/Km6TT03T/Lbzb9utJr3YnjpHpF2/knMTRiV3nWnNKOV419MIT46qoIECVGWm2icbtND9Z82lptPwfng=
-        file_glob: true
-        file: "*.vsix"
-        skip_cleanup: true
-        on:
-          tags: true
-          repo: torrentalle/vscode-perl-moose
-          branch: travis3
-    - <<: *release
-      name: "Publish GitHub Pre-release"
-      if: tag =~ /^v?[0-9]+\.[0-9]+\.[0-9]+.+$/
-      deploy:
-        <<: *github
-        prerelease: true
-    - &testrelease       # https://travis-ci.community/t/current-known-issues-please-read-this-before-posting-a-new-topic/264/8
-      stage: test release
-      name: "Test extension package on Windows"
-      os: windows
-      if: tag =~ /^v?[0-9]+\.[0-9]+\.[0-9]+/
-      install:
-        - npm install
+    - name: Integration tests
+      script:
         - npm run build
-        - export PKG_VERSION=$(npm run version --silent)
-        - wget "https://github.com/torrentalle/vscode-perl-moose/releases/download/$TRAVIS_TAG/perl-moose-$PKG_VERSION.vsix"
+        - xvfb-run npm run test
+    - stage: Release tests
+      name: Package install tests
       script:
-        - npm run test:package
-    - <<: *testrelease
-      os: osx
-      node_js: "8.11.3"
-      name: "Test extension package on OSX"
-    - <<: *testrelease
-      os: linux
-      name: "Test extension package on Linux"
-      script:
+        - npm run build:package
         - xvfb-run npm run test:package
+      before_deploy:
+        - export PACKAGE_FILE=perl-moose-$(npm run version --silent).vsix
+        - export TRAVIS_TAG=${TRAVIS_TAG:-$TRAVIS_BRANCH}
+      deploy:
+        - &github
+          provider: releases
+          api_key:
+            secure: l8RvVwO5mDdvvf9gdSNkX7TDBOpd6TAvLepgBJgj7KAf9DFAxt9FoGLerUPed4QaTRCAwuitWcG2CpZR4j8+ZMgEdu1KGVlI20WmvnESxRQemwwkLX8hEU47u9VjRpn2d2seloU47vclsj3Bh/zF5PR+1ccWpf3HLYz2KPT7F7PlBBxpAy3XT08ZuN9Dnitiz2dczillB+viEIs8mbW94K5BfaJcYNY+y4lxC9++r8KfIfNvubzwJmUtfC0CBUYRQciy59yNblmFd6PzBYXlk7ZG/LEmpCrYYLPoVRYB2kSHB8fFAasrENxiUVpgOuMmYKKpmKRYMuBic6dwBUMucwTgKFR9tLKNoJbavb5gTK6RPoDR7oD5TXXzflUZRbuwd7Kvt+6imSnFMu0Nrt34RvT3teAybdmBB2HTJ+GNIvBjBz/R2WTb1E/jRIvQ7l0IRBZ0C6ZO4jLnI980QZA5dmmRRvTg2/QIkgQ+4tHfNYyPbZlVhnO2L5J1JTo520yuQFqzKNtTUdfpeP3vX2gFJr0oNnK04lNBqwWkRA5dFdT4dX7xeREGR6CvYyXUdqVzBxv1Tc7gaVH58zPpgtXlzg2S0a2/Km6TT03T/Lbzb9utJr3YnjpHpF2/knMTRiV3nWnNKOV419MIT46qoIECVGWm2icbtND9Z82lptPwfng=
+          file: $PACKAGE_FILE
+          skip_cleanup: true
+          on:
+            branch: master
+            tags: true
+        - <<: *github
+          prerelease: true
+          overwrite: true
+          on:
+            branch: master
+            tags: false

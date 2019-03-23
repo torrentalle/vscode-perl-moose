@@ -4,9 +4,17 @@
 import * as vscode from 'vscode'
 import * as assert from 'assert'
 import * as fs from 'fs'
-import { getFixturePath, getFixtureUri, activate } from './helper'
+import { getFixturePath, getFixtureUri, activate } from '../helper'
 export let doc: vscode.TextDocument
 export let editor: vscode.TextEditor
+
+
+suite('VSCode', () => {
+  test('VSCode is running', ()=> {
+      assert.ok("VSCode")
+  })
+})
+
 
 suite('Perl Moose Extension', () => {
   
