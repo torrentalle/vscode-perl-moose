@@ -6,7 +6,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [0.1.1] - 2019-03-23
 
-- Support for Mouse
+- Support for Mouse. @d9705996
 
 
 ## [0.1.0] - 2019-03-13
