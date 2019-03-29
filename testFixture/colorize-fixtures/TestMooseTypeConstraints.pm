@@ -3,11 +3,22 @@ Perl Moose packages to test VSCode colorize
 This file is used to to test VSCode Colorization
 =cut
 
+#########
+# Stubs #
+#########
+
+sub subtype {};
+
 
 ##########################################################
 # Test:       Moose TypeConstraints syntax is colorized  #
 # Repository: moose_type_constraint                      #
 ##########################################################
+
+# Pattern:    use Moose::Util::TypeConstraints
+use Mouse::Util::TypeConstraints;
+
+no Mouse::Util::TypeConstraints;
 
 # Pattern:    use Moose::Util::TypeConstraints
 use Moose::Util::TypeConstraints;
@@ -60,5 +71,4 @@ Moose::Util::TypeConstraints::add_parameterizable_type($types[0]);
 no Moose::Util::TypeConstraints;
 
 # Assert: !meta.type.constraint.moose.perl
-sub subtype {};
 subtype();

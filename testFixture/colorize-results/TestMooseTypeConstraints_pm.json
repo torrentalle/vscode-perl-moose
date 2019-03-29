@@ -55,6 +55,149 @@
 		}
 	},
 	{
+		"c": "########",
+		"t": "source.perl comment.line.number-sign.perl",
+		"r": {
+			"dark_plus": "comment: #6A9955",
+			"light_plus": "comment: #008000",
+			"dark_vs": "comment: #6A9955",
+			"light_vs": "comment: #008000",
+			"hc_black": "comment: #7CA668"
+		}
+	},
+	{
+		"c": "#",
+		"t": "source.perl comment.line.number-sign.perl punctuation.definition.comment.perl",
+		"r": {
+			"dark_plus": "comment: #6A9955",
+			"light_plus": "comment: #008000",
+			"dark_vs": "comment: #6A9955",
+			"light_vs": "comment: #008000",
+			"hc_black": "comment: #7CA668"
+		}
+	},
+	{
+		"c": " Stubs #",
+		"t": "source.perl comment.line.number-sign.perl",
+		"r": {
+			"dark_plus": "comment: #6A9955",
+			"light_plus": "comment: #008000",
+			"dark_vs": "comment: #6A9955",
+			"light_vs": "comment: #008000",
+			"hc_black": "comment: #7CA668"
+		}
+	},
+	{
+		"c": "#",
+		"t": "source.perl comment.line.number-sign.perl punctuation.definition.comment.perl",
+		"r": {
+			"dark_plus": "comment: #6A9955",
+			"light_plus": "comment: #008000",
+			"dark_vs": "comment: #6A9955",
+			"light_vs": "comment: #008000",
+			"hc_black": "comment: #7CA668"
+		}
+	},
+	{
+		"c": "########",
+		"t": "source.perl comment.line.number-sign.perl",
+		"r": {
+			"dark_plus": "comment: #6A9955",
+			"light_plus": "comment: #008000",
+			"dark_vs": "comment: #6A9955",
+			"light_vs": "comment: #008000",
+			"hc_black": "comment: #7CA668"
+		}
+	},
+	{
+		"c": "sub",
+		"t": "source.perl meta.function.perl storage.type.sub.perl",
+		"r": {
+			"dark_plus": "storage.type: #569CD6",
+			"light_plus": "storage.type: #0000FF",
+			"dark_vs": "storage.type: #569CD6",
+			"light_vs": "storage.type: #0000FF",
+			"hc_black": "storage.type: #569CD6"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.perl meta.function.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "subtype",
+		"t": "source.perl meta.function.perl entity.name.function.perl",
+		"r": {
+			"dark_plus": "entity.name.function: #DCDCAA",
+			"light_plus": "entity.name.function: #795E26",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "entity.name.function: #DCDCAA"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.perl meta.function.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "{",
+		"t": "source.perl punctuation.section.scope.begin.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "}",
+		"t": "source.perl punctuation.section.scope.end.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": ";",
+		"t": "source.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "#",
+		"t": "source.perl comment.line.number-sign.perl punctuation.definition.comment.perl",
+		"r": {
+			"dark_plus": "comment: #6A9955",
+			"light_plus": "comment: #008000",
+			"dark_vs": "comment: #6A9955",
+			"light_vs": "comment: #008000",
+			"hc_black": "comment: #7CA668"
+		}
+	},
+	{
 		"c": "#########################################################",
 		"t": "source.perl comment.line.number-sign.perl",
 		"r": {
@@ -129,6 +272,94 @@
 			"dark_vs": "comment: #6A9955",
 			"light_vs": "comment: #008000",
 			"hc_black": "comment: #7CA668"
+		}
+	},
+	{
+		"c": "#",
+		"t": "source.perl comment.line.number-sign.perl punctuation.definition.comment.perl",
+		"r": {
+			"dark_plus": "comment: #6A9955",
+			"light_plus": "comment: #008000",
+			"dark_vs": "comment: #6A9955",
+			"light_vs": "comment: #008000",
+			"hc_black": "comment: #7CA668"
+		}
+	},
+	{
+		"c": " Pattern:    use Moose::Util::TypeConstraints",
+		"t": "source.perl comment.line.number-sign.perl",
+		"r": {
+			"dark_plus": "comment: #6A9955",
+			"light_plus": "comment: #008000",
+			"dark_vs": "comment: #6A9955",
+			"light_vs": "comment: #008000",
+			"hc_black": "comment: #7CA668"
+		}
+	},
+	{
+		"c": "use",
+		"t": "source.perl keyword.control.perl",
+		"r": {
+			"dark_plus": "keyword.control: #C586C0",
+			"light_plus": "keyword.control: #AF00DB",
+			"dark_vs": "keyword.control: #569CD6",
+			"light_vs": "keyword.control: #0000FF",
+			"hc_black": "keyword.control: #C586C0"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.perl meta.type.constraint.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "Mouse::Util::TypeConstraints",
+		"t": "source.perl meta.type.constraint.moose.perl entity.name.class.moose.perl",
+		"r": {
+			"dark_plus": "entity.name.class: #4EC9B0",
+			"light_plus": "entity.name.class: #267F99",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "entity.name.class: #4EC9B0"
+		}
+	},
+	{
+		"c": ";",
+		"t": "source.perl meta.type.constraint.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "no",
+		"t": "source.perl support.function.perl",
+		"r": {
+			"dark_plus": "support.function: #DCDCAA",
+			"light_plus": "support.function: #795E26",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "support.function: #DCDCAA"
+		}
+	},
+	{
+		"c": " Mouse::Util::TypeConstraints;",
+		"t": "source.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
 		}
 	},
 	{
@@ -3077,83 +3308,6 @@
 			"dark_vs": "comment: #6A9955",
 			"light_vs": "comment: #008000",
 			"hc_black": "comment: #7CA668"
-		}
-	},
-	{
-		"c": "sub",
-		"t": "source.perl meta.function.perl storage.type.sub.perl",
-		"r": {
-			"dark_plus": "storage.type: #569CD6",
-			"light_plus": "storage.type: #0000FF",
-			"dark_vs": "storage.type: #569CD6",
-			"light_vs": "storage.type: #0000FF",
-			"hc_black": "storage.type: #569CD6"
-		}
-	},
-	{
-		"c": " ",
-		"t": "source.perl meta.function.perl",
-		"r": {
-			"dark_plus": "default: #D4D4D4",
-			"light_plus": "default: #000000",
-			"dark_vs": "default: #D4D4D4",
-			"light_vs": "default: #000000",
-			"hc_black": "default: #FFFFFF"
-		}
-	},
-	{
-		"c": "subtype",
-		"t": "source.perl meta.function.perl entity.name.function.perl",
-		"r": {
-			"dark_plus": "entity.name.function: #DCDCAA",
-			"light_plus": "entity.name.function: #795E26",
-			"dark_vs": "default: #D4D4D4",
-			"light_vs": "default: #000000",
-			"hc_black": "entity.name.function: #DCDCAA"
-		}
-	},
-	{
-		"c": " ",
-		"t": "source.perl meta.function.perl",
-		"r": {
-			"dark_plus": "default: #D4D4D4",
-			"light_plus": "default: #000000",
-			"dark_vs": "default: #D4D4D4",
-			"light_vs": "default: #000000",
-			"hc_black": "default: #FFFFFF"
-		}
-	},
-	{
-		"c": "{",
-		"t": "source.perl punctuation.section.scope.begin.perl",
-		"r": {
-			"dark_plus": "default: #D4D4D4",
-			"light_plus": "default: #000000",
-			"dark_vs": "default: #D4D4D4",
-			"light_vs": "default: #000000",
-			"hc_black": "default: #FFFFFF"
-		}
-	},
-	{
-		"c": "}",
-		"t": "source.perl punctuation.section.scope.end.perl",
-		"r": {
-			"dark_plus": "default: #D4D4D4",
-			"light_plus": "default: #000000",
-			"dark_vs": "default: #D4D4D4",
-			"light_vs": "default: #000000",
-			"hc_black": "default: #FFFFFF"
-		}
-	},
-	{
-		"c": ";",
-		"t": "source.perl",
-		"r": {
-			"dark_plus": "default: #D4D4D4",
-			"light_plus": "default: #000000",
-			"dark_vs": "default: #D4D4D4",
-			"light_vs": "default: #000000",
-			"hc_black": "default: #FFFFFF"
 		}
 	},
 	{
