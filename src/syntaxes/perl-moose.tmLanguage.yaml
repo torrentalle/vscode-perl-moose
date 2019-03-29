@@ -6,9 +6,8 @@ information_for_contributors:
     command to generate extension source code.
   - npm run generate:syntax
 
-#fileTypes: []
+scopeName: source.perl.moose
 injectionSelector: L:source.perl -comment -string -text
-#name: Perl Moose
 patterns:
   - include: '#moose_packages'
 
@@ -26,7 +25,6 @@ repository:
             name: entity.name.class.moose.perl
         end: (\b)(?=^\s*package\s|no\s+\1[\s;])
         patterns:
-          - include: '#moose'
           - include: '#source'
       - name: meta.role.moose.perl
         begin: (?<=use)\s+((?:Moose|Mouse|Moo)::Role)(?=[\s;])
@@ -35,7 +33,6 @@ repository:
             name: entity.name.class.moose.perl
         end: (\b)(?=^\s*package\s|no\s+\1[\s;])
         patterns:
-          - include: '#moose_role'
           - include: '#source'
       - name: meta.type.constraint.moose.perl
         begin: (?<=use)\s+((?:Moose|Mouse)::Util::TypeConstraints)(?=[\s;])
@@ -44,82 +41,4 @@ repository:
             name: entity.name.class.moose.perl
         end: (\b)(?=^\s*package\s|no\s+\1[\s;])
         patterns:
-          - include: '#moose_type_constraint'
           - include: '#source'
-
-  # This section contains Moose related syntax
-  moose:
-    patterns:
-      - match: \s*(-meta_name)\b
-        captures:
-          '1':
-            name: entity.other.attribute-name.moose.perl
-        name: constant.language.type.modifier.moose.perl
-      # Todo: review if we need to remove entity.name.class.moose.perl
-      - match: \b(extends|with)(?:\s+([-a-zA-Z0-9_]+))?\s*
-        captures:
-          '1':
-            name: keyword.control.import.moose.perl
-          '2':
-            name: entity.name.class.moose.perl
-        name: keyword.control.moose.perl
-      - match: \b(has)(?:\s+(\+|)([-a-zA-Z0-9_]+))?\s*
-        captures:
-          '1':
-            name:  keyword.other.attribute.moose.perl
-          '2':
-            name: storage.modifier.attribute.moose.perl
-          '3':
-            name: entity.other.attribute-name.moose.perl
-      - match: \b(auto_deref|builder|clearer|coerce|default|documentation|does|handles|is|isa|lazy|lazy_build|metaclass|predicate|required|role_attribute|traits|trigger|weak_ref)\s*(?==>)
-        name: constant.language.has.key.moose.perl
-      - match: \b(before|after|around|override|augment)(?:\s+([-a-zA-Z0-9_]+))?
-        captures:
-          '1':
-            name: keyword.other.attribute.moose.perl
-          '2':
-            name: entity.name.function.perl
-      - match: \b(blessed|confess|inner|meta|super)\b
-        name:  support.function.moose.perl
-
-  # This section contains Moose::Role related syntax
-  moose_role:
-    name: meta.role.moose.perl
-    patterns:
-      - name: constant.language.type.modifier.moose.perl
-        match: \b(-traits)\s*(?==>)
-      - name: keyword.other.role.moose.perl
-        match: \b(requires|excludes)\b
-      - include: '#moose'
-
-  # This section contains Moose::Util::TypeConstraints related syntax
-  moose_type_constraint:
-    patterns:
-      - name: keyword.control.moose.perl
-        match: \b(type|subtype|as|where|message|inline_as|match_on_type)\b
-      - name: keyword.control.moose.perl
-        match: (?<!->)\b(coerce)\b
-      - name: keyword.control.moose.perl
-        match: \b(from|via)\b
-      - name:  keyword.other.type.moose.perl
-        match: \b(class_type|role_type|maybe_type|duck_type|enum|union)\b
-      - name:  support.function.moose.perl
-        match: \b(find|register|create_(parameterized|class|role|enum|duck)|find_or_(parse|create_isa|create_does))_type_constraint\b
-      - name:  support.function.moose.perl
-        match: \b(normalize_type_constraint_name)\b
-      - name:  support.function.moose.perl
-        match: \b(create_type_constraint_union)\b
-      - name:  support.function.moose.perl
-        match: \b(create_named_type_constraint_union)\b
-      - name:  support.function.moose.perl
-        match: \b(get_type_constraint_registry)\b
-      - name:  support.function.moose.perl
-        match: \b(list_all_(builtin_type_constraints|type_constraints))\b
-      - name:  support.function.moose.perl
-        match: \b(export_type_constraints_as_functions)\b
-      - name:  support.function.moose.perl
-        match: \b(get_all_parameterizable_types)\b
-      - name:  support.function.moose.perl
-        match: \b(add_parameterizable_type)\b
-
-scopeName: source.perl.moose

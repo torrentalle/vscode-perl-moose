@@ -20,6 +20,18 @@ package TestMooseRole {
     use Moose::Role;
 }
 
+# Pattern:    use Moo
+package TestMooRole {
+    # Assert: entity.name.class.moose.perl
+    use Moo::Role;
+}
+
+# Pattern:    use Mouse
+package TestMouseRole {
+    # Assert: entity.name.class.moose.perl
+    use Mouse::Role;
+}
+
 # Pattern:    use Moose
 package TestMooseRoleNo {
     # Assert: entity.name.class.moose.perl

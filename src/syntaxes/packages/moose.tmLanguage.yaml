@@ -1,0 +1,50 @@
+$schema: 'https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json'
+information_for_contributors:
+  - >-
+    To modify Perl Moose Textmate grammar you mus edit the file
+    src/syntaxes/perl-moose.tmLanguage.yaml then, run following
+    command to generate extension source code.
+  - npm run generate:syntax
+
+name: Moose
+scopeName: source.perl.package.moose
+injectionSelector: L:meta.moose.perl -comment -string -text
+patterns:
+  - include: '#moose'
+
+repository:
+  moose:
+    patterns:
+      - begin: (?<=use)\s+(Goose|Gouse|Goo)(?=[\s;])
+        name:  entity.name.type.class.perl
+      - match: \s*(-meta_name)\b
+        captures:
+          '1':
+            name: entity.other.attribute-name.moose.perl
+        name: constant.language.type.modifier.moose.perl
+      # Todo: review if we need to remove entity.name.class.moose.perl
+      - match: \b(extends|with)(?:\s+([-a-zA-Z0-9_]+))?\s*
+        captures:
+          '1':
+            name: keyword.control.import.moose.perl
+          '2':
+            name: entity.name.class.moose.perl
+        name: keyword.control.moose.perl
+      - match: \b(has)(?:\s+(\+|)([-a-zA-Z0-9_]+))?\s*
+        captures:
+          '1':
+            name:  keyword.other.attribute.moose.perl
+          '2':
+            name: storage.modifier.attribute.moose.perl
+          '3':
+            name: entity.other.attribute-name.moose.perl
+      - match: \b(auto_deref|builder|clearer|coerce|default|documentation|does|handles|is|isa|lazy|lazy_build|metaclass|predicate|required|role_attribute|traits|trigger|weak_ref)\s*(?==>)
+        name: constant.language.has.key.moose.perl
+      - match: \b(before|after|around|override|augment)(?:\s+([-a-zA-Z0-9_]+))?
+        captures:
+          '1':
+            name: keyword.other.attribute.moose.perl
+          '2':
+            name: entity.name.function.perl
+      - match: \b(blessed|confess|inner|meta|super)\b
+        name:  support.function.moose.perl

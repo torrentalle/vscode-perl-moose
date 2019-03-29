@@ -29,13 +29,25 @@ package TestMooseRole {
 ###############################################
 
 # Pattern:    use Moose
-package TestMoosePackages {
+package TestMoosePackage {
     # Assert: entity.name.class.moose.perl
     use Moose;
 }
 
+# Pattern:    use Moo
+package TestMooPackage {
+    # Assert: entity.name.class.moose.perl
+    use Moo;
+}
+
+# Pattern:    use Mouse
+package TestMousePackage {
+    # Assert: entity.name.class.moose.perl
+    use Mouse;
+}
+
 # Pattern:    use Moose
-package TestMoosePackagesNo {
+package TestMoosePackageNo {
     # Assert: entity.name.class.moose.perl
     use Moose;
 

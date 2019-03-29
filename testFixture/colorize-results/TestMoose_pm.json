@@ -298,7 +298,7 @@
 	},
 	{
 		"c": "has",
-		"t": "source.perl meta.moose.perl keyword.other.attribute.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs keyword.other.attribute.moose.perl",
 		"r": {
 			"dark_plus": "keyword: #569CD6",
 			"light_plus": "keyword: #0000FF",
@@ -309,7 +309,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.perl meta.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -320,7 +320,7 @@
 	},
 	{
 		"c": "attribute",
-		"t": "source.perl meta.moose.perl entity.other.attribute-name.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs entity.other.attribute-name.moose.perl",
 		"r": {
 			"dark_plus": "entity.other.attribute-name: #9CDCFE",
 			"light_plus": "entity.other.attribute-name: #FF0000",
@@ -331,7 +331,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.perl meta.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -771,7 +771,7 @@
 	},
 	{
 		"c": "has",
-		"t": "source.perl meta.role.moose.perl keyword.other.attribute.moose.perl",
+		"t": "source.perl meta.role.moose.perl meta.leading-tabs keyword.other.attribute.moose.perl",
 		"r": {
 			"dark_plus": "keyword: #569CD6",
 			"light_plus": "keyword: #0000FF",
@@ -782,7 +782,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.perl meta.role.moose.perl",
+		"t": "source.perl meta.role.moose.perl meta.leading-tabs",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -793,7 +793,7 @@
 	},
 	{
 		"c": "role_attribute",
-		"t": "source.perl meta.role.moose.perl entity.other.attribute-name.moose.perl",
+		"t": "source.perl meta.role.moose.perl meta.leading-tabs entity.other.attribute-name.moose.perl",
 		"r": {
 			"dark_plus": "entity.other.attribute-name: #9CDCFE",
 			"light_plus": "entity.other.attribute-name: #FF0000",
@@ -804,7 +804,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.perl meta.role.moose.perl",
+		"t": "source.perl meta.role.moose.perl meta.leading-tabs",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -1089,7 +1089,7 @@
 		}
 	},
 	{
-		"c": "TestMoosePackages",
+		"c": "TestMoosePackage",
 		"t": "source.perl meta.class.perl entity.name.type.class.perl",
 		"r": {
 			"dark_plus": "entity.name.type: #4EC9B0",
@@ -1221,6 +1221,336 @@
 		}
 	},
 	{
+		"c": " Pattern:    use Moo",
+		"t": "source.perl meta.moose.perl comment.line.number-sign.perl",
+		"r": {
+			"dark_plus": "comment: #6A9955",
+			"light_plus": "comment: #008000",
+			"dark_vs": "comment: #6A9955",
+			"light_vs": "comment: #008000",
+			"hc_black": "comment: #7CA668"
+		}
+	},
+	{
+		"c": "package",
+		"t": "source.perl meta.class.perl keyword.control.perl",
+		"r": {
+			"dark_plus": "keyword.control: #C586C0",
+			"light_plus": "keyword.control: #AF00DB",
+			"dark_vs": "keyword.control: #569CD6",
+			"light_vs": "keyword.control: #0000FF",
+			"hc_black": "keyword.control: #C586C0"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.perl meta.class.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "TestMooPackage",
+		"t": "source.perl meta.class.perl entity.name.type.class.perl",
+		"r": {
+			"dark_plus": "entity.name.type: #4EC9B0",
+			"light_plus": "entity.name.type: #267F99",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "entity.name.type: #4EC9B0"
+		}
+	},
+	{
+		"c": " {",
+		"t": "source.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "    ",
+		"t": "source.perl punctuation.whitespace.comment.leading.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "#",
+		"t": "source.perl comment.line.number-sign.perl punctuation.definition.comment.perl",
+		"r": {
+			"dark_plus": "comment: #6A9955",
+			"light_plus": "comment: #008000",
+			"dark_vs": "comment: #6A9955",
+			"light_vs": "comment: #008000",
+			"hc_black": "comment: #7CA668"
+		}
+	},
+	{
+		"c": " Assert: entity.name.class.moose.perl",
+		"t": "source.perl comment.line.number-sign.perl",
+		"r": {
+			"dark_plus": "comment: #6A9955",
+			"light_plus": "comment: #008000",
+			"dark_vs": "comment: #6A9955",
+			"light_vs": "comment: #008000",
+			"hc_black": "comment: #7CA668"
+		}
+	},
+	{
+		"c": "    ",
+		"t": "source.perl meta.leading-tabs meta.odd-tab",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "use",
+		"t": "source.perl keyword.control.perl",
+		"r": {
+			"dark_plus": "keyword.control: #C586C0",
+			"light_plus": "keyword.control: #AF00DB",
+			"dark_vs": "keyword.control: #569CD6",
+			"light_vs": "keyword.control: #0000FF",
+			"hc_black": "keyword.control: #C586C0"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.perl meta.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "Moo",
+		"t": "source.perl meta.moose.perl entity.name.class.moose.perl",
+		"r": {
+			"dark_plus": "entity.name.class: #4EC9B0",
+			"light_plus": "entity.name.class: #267F99",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "entity.name.class: #4EC9B0"
+		}
+	},
+	{
+		"c": ";",
+		"t": "source.perl meta.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "}",
+		"t": "source.perl meta.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "#",
+		"t": "source.perl meta.moose.perl comment.line.number-sign.perl punctuation.definition.comment.perl",
+		"r": {
+			"dark_plus": "comment: #6A9955",
+			"light_plus": "comment: #008000",
+			"dark_vs": "comment: #6A9955",
+			"light_vs": "comment: #008000",
+			"hc_black": "comment: #7CA668"
+		}
+	},
+	{
+		"c": " Pattern:    use Mouse",
+		"t": "source.perl meta.moose.perl comment.line.number-sign.perl",
+		"r": {
+			"dark_plus": "comment: #6A9955",
+			"light_plus": "comment: #008000",
+			"dark_vs": "comment: #6A9955",
+			"light_vs": "comment: #008000",
+			"hc_black": "comment: #7CA668"
+		}
+	},
+	{
+		"c": "package",
+		"t": "source.perl meta.class.perl keyword.control.perl",
+		"r": {
+			"dark_plus": "keyword.control: #C586C0",
+			"light_plus": "keyword.control: #AF00DB",
+			"dark_vs": "keyword.control: #569CD6",
+			"light_vs": "keyword.control: #0000FF",
+			"hc_black": "keyword.control: #C586C0"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.perl meta.class.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "TestMousePackage",
+		"t": "source.perl meta.class.perl entity.name.type.class.perl",
+		"r": {
+			"dark_plus": "entity.name.type: #4EC9B0",
+			"light_plus": "entity.name.type: #267F99",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "entity.name.type: #4EC9B0"
+		}
+	},
+	{
+		"c": " {",
+		"t": "source.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "    ",
+		"t": "source.perl punctuation.whitespace.comment.leading.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "#",
+		"t": "source.perl comment.line.number-sign.perl punctuation.definition.comment.perl",
+		"r": {
+			"dark_plus": "comment: #6A9955",
+			"light_plus": "comment: #008000",
+			"dark_vs": "comment: #6A9955",
+			"light_vs": "comment: #008000",
+			"hc_black": "comment: #7CA668"
+		}
+	},
+	{
+		"c": " Assert: entity.name.class.moose.perl",
+		"t": "source.perl comment.line.number-sign.perl",
+		"r": {
+			"dark_plus": "comment: #6A9955",
+			"light_plus": "comment: #008000",
+			"dark_vs": "comment: #6A9955",
+			"light_vs": "comment: #008000",
+			"hc_black": "comment: #7CA668"
+		}
+	},
+	{
+		"c": "    ",
+		"t": "source.perl meta.leading-tabs meta.odd-tab",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "use",
+		"t": "source.perl keyword.control.perl",
+		"r": {
+			"dark_plus": "keyword.control: #C586C0",
+			"light_plus": "keyword.control: #AF00DB",
+			"dark_vs": "keyword.control: #569CD6",
+			"light_vs": "keyword.control: #0000FF",
+			"hc_black": "keyword.control: #C586C0"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.perl meta.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "Mouse",
+		"t": "source.perl meta.moose.perl entity.name.class.moose.perl",
+		"r": {
+			"dark_plus": "entity.name.class: #4EC9B0",
+			"light_plus": "entity.name.class: #267F99",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "entity.name.class: #4EC9B0"
+		}
+	},
+	{
+		"c": ";",
+		"t": "source.perl meta.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "}",
+		"t": "source.perl meta.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "#",
+		"t": "source.perl meta.moose.perl comment.line.number-sign.perl punctuation.definition.comment.perl",
+		"r": {
+			"dark_plus": "comment: #6A9955",
+			"light_plus": "comment: #008000",
+			"dark_vs": "comment: #6A9955",
+			"light_vs": "comment: #008000",
+			"hc_black": "comment: #7CA668"
+		}
+	},
+	{
 		"c": " Pattern:    use Moose",
 		"t": "source.perl meta.moose.perl comment.line.number-sign.perl",
 		"r": {
@@ -1254,7 +1584,7 @@
 		}
 	},
 	{
-		"c": "TestMoosePackagesNo",
+		"c": "TestMoosePackageNo",
 		"t": "source.perl meta.class.perl entity.name.type.class.perl",
 		"r": {
 			"dark_plus": "entity.name.type: #4EC9B0",
@@ -1937,7 +2267,7 @@
 	},
 	{
 		"c": "extends",
-		"t": "source.perl meta.moose.perl keyword.control.moose.perl keyword.control.import.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs keyword.control.moose.perl keyword.control.import.moose.perl",
 		"r": {
 			"dark_plus": "keyword.control: #C586C0",
 			"light_plus": "keyword.control: #AF00DB",
@@ -1948,7 +2278,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.perl meta.moose.perl keyword.control.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs keyword.control.moose.perl",
 		"r": {
 			"dark_plus": "keyword.control: #C586C0",
 			"light_plus": "keyword.control: #AF00DB",
@@ -2047,7 +2377,7 @@
 	},
 	{
 		"c": "with",
-		"t": "source.perl meta.moose.perl keyword.control.moose.perl keyword.control.import.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs keyword.control.moose.perl keyword.control.import.moose.perl",
 		"r": {
 			"dark_plus": "keyword.control: #C586C0",
 			"light_plus": "keyword.control: #AF00DB",
@@ -2058,7 +2388,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.perl meta.moose.perl keyword.control.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs keyword.control.moose.perl",
 		"r": {
 			"dark_plus": "keyword.control: #C586C0",
 			"light_plus": "keyword.control: #AF00DB",
@@ -2069,7 +2399,7 @@
 	},
 	{
 		"c": "TestMooseRole",
-		"t": "source.perl meta.moose.perl keyword.control.moose.perl entity.name.class.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs keyword.control.moose.perl entity.name.class.moose.perl",
 		"r": {
 			"dark_plus": "entity.name.class: #4EC9B0",
 			"light_plus": "entity.name.class: #267F99",
@@ -2234,7 +2564,7 @@
 	},
 	{
 		"c": "with",
-		"t": "source.perl meta.moose.perl keyword.control.moose.perl keyword.control.import.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs keyword.control.moose.perl keyword.control.import.moose.perl",
 		"r": {
 			"dark_plus": "keyword.control: #C586C0",
 			"light_plus": "keyword.control: #AF00DB",
@@ -2245,7 +2575,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.perl meta.moose.perl keyword.control.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs keyword.control.moose.perl",
 		"r": {
 			"dark_plus": "keyword.control: #C586C0",
 			"light_plus": "keyword.control: #AF00DB",
@@ -2355,7 +2685,7 @@
 	},
 	{
 		"c": "has",
-		"t": "source.perl meta.moose.perl keyword.other.attribute.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs keyword.other.attribute.moose.perl",
 		"r": {
 			"dark_plus": "keyword: #569CD6",
 			"light_plus": "keyword: #0000FF",
@@ -2366,7 +2696,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.perl meta.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -2377,7 +2707,7 @@
 	},
 	{
 		"c": "attribute",
-		"t": "source.perl meta.moose.perl entity.other.attribute-name.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs entity.other.attribute-name.moose.perl",
 		"r": {
 			"dark_plus": "entity.other.attribute-name: #9CDCFE",
 			"light_plus": "entity.other.attribute-name: #FF0000",
@@ -2388,7 +2718,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.perl meta.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -2443,7 +2773,7 @@
 	},
 	{
 		"c": "auto_deref     ",
-		"t": "source.perl meta.moose.perl constant.language.has.key.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs constant.language.has.key.moose.perl",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -2498,7 +2828,7 @@
 	},
 	{
 		"c": "clearer        ",
-		"t": "source.perl meta.moose.perl constant.language.has.key.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs constant.language.has.key.moose.perl",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -2597,7 +2927,7 @@
 	},
 	{
 		"c": "coerce         ",
-		"t": "source.perl meta.moose.perl constant.language.has.key.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs constant.language.has.key.moose.perl",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -2652,7 +2982,7 @@
 	},
 	{
 		"c": "default        ",
-		"t": "source.perl meta.moose.perl constant.language.has.key.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs constant.language.has.key.moose.perl",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -2740,7 +3070,7 @@
 	},
 	{
 		"c": "documentation  ",
-		"t": "source.perl meta.moose.perl constant.language.has.key.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs constant.language.has.key.moose.perl",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -2839,7 +3169,7 @@
 	},
 	{
 		"c": "handles ",
-		"t": "source.perl meta.moose.perl constant.language.has.key.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs constant.language.has.key.moose.perl",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -3169,7 +3499,7 @@
 	},
 	{
 		"c": "is             ",
-		"t": "source.perl meta.moose.perl constant.language.has.key.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs constant.language.has.key.moose.perl",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -3268,7 +3598,7 @@
 	},
 	{
 		"c": "isa            ",
-		"t": "source.perl meta.moose.perl constant.language.has.key.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs constant.language.has.key.moose.perl",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -3367,7 +3697,7 @@
 	},
 	{
 		"c": "lazy           ",
-		"t": "source.perl meta.moose.perl constant.language.has.key.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs constant.language.has.key.moose.perl",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -3422,7 +3752,7 @@
 	},
 	{
 		"c": "metaclass      ",
-		"t": "source.perl meta.moose.perl constant.language.has.key.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs constant.language.has.key.moose.perl",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -3521,7 +3851,7 @@
 	},
 	{
 		"c": "predicate      ",
-		"t": "source.perl meta.moose.perl constant.language.has.key.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs constant.language.has.key.moose.perl",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -3620,7 +3950,7 @@
 	},
 	{
 		"c": "required       ",
-		"t": "source.perl meta.moose.perl constant.language.has.key.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs constant.language.has.key.moose.perl",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -3675,7 +4005,7 @@
 	},
 	{
 		"c": "traits         ",
-		"t": "source.perl meta.moose.perl constant.language.has.key.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs constant.language.has.key.moose.perl",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -3774,7 +4104,7 @@
 	},
 	{
 		"c": "trigger        ",
-		"t": "source.perl meta.moose.perl constant.language.has.key.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs constant.language.has.key.moose.perl",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -3884,7 +4214,7 @@
 	},
 	{
 		"c": "weak_ref       ",
-		"t": "source.perl meta.moose.perl constant.language.has.key.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs constant.language.has.key.moose.perl",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -3983,7 +4313,7 @@
 	},
 	{
 		"c": "has",
-		"t": "source.perl meta.moose.perl keyword.other.attribute.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs keyword.other.attribute.moose.perl",
 		"r": {
 			"dark_plus": "keyword: #569CD6",
 			"light_plus": "keyword: #0000FF",
@@ -3994,7 +4324,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.perl meta.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -4093,7 +4423,7 @@
 	},
 	{
 		"c": "is         ",
-		"t": "source.perl meta.moose.perl constant.language.has.key.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs constant.language.has.key.moose.perl",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -4192,7 +4522,7 @@
 	},
 	{
 		"c": "builder    ",
-		"t": "source.perl meta.moose.perl constant.language.has.key.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs constant.language.has.key.moose.perl",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -4291,7 +4621,7 @@
 	},
 	{
 		"c": "does       ",
-		"t": "source.perl meta.moose.perl constant.language.has.key.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs constant.language.has.key.moose.perl",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -4390,7 +4720,7 @@
 	},
 	{
 		"c": "lazy_build ",
-		"t": "source.perl meta.moose.perl constant.language.has.key.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs constant.language.has.key.moose.perl",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -4445,7 +4775,7 @@
 	},
 	{
 		"c": "role_attribute ",
-		"t": "source.perl meta.moose.perl constant.language.has.key.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs constant.language.has.key.moose.perl",
 		"r": {
 			"dark_plus": "constant.language: #569CD6",
 			"light_plus": "constant.language: #0000FF",
@@ -4819,7 +5149,7 @@
 	},
 	{
 		"c": "extends",
-		"t": "source.perl meta.moose.perl keyword.control.moose.perl keyword.control.import.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs keyword.control.moose.perl keyword.control.import.moose.perl",
 		"r": {
 			"dark_plus": "keyword.control: #C586C0",
 			"light_plus": "keyword.control: #AF00DB",
@@ -4830,7 +5160,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.perl meta.moose.perl keyword.control.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs keyword.control.moose.perl",
 		"r": {
 			"dark_plus": "keyword.control: #C586C0",
 			"light_plus": "keyword.control: #AF00DB",
@@ -5017,7 +5347,7 @@
 	},
 	{
 		"c": "before",
-		"t": "source.perl meta.moose.perl keyword.other.attribute.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs keyword.other.attribute.moose.perl",
 		"r": {
 			"dark_plus": "keyword: #569CD6",
 			"light_plus": "keyword: #0000FF",
@@ -5028,7 +5358,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.perl meta.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5039,7 +5369,7 @@
 	},
 	{
 		"c": "method",
-		"t": "source.perl meta.moose.perl entity.name.function.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs entity.name.function.perl",
 		"r": {
 			"dark_plus": "entity.name.function: #DCDCAA",
 			"light_plus": "entity.name.function: #795E26",
@@ -5050,7 +5380,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.perl meta.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5182,7 +5512,7 @@
 	},
 	{
 		"c": "after",
-		"t": "source.perl meta.moose.perl keyword.other.attribute.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs keyword.other.attribute.moose.perl",
 		"r": {
 			"dark_plus": "keyword: #569CD6",
 			"light_plus": "keyword: #0000FF",
@@ -5193,7 +5523,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.perl meta.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5369,7 +5699,7 @@
 	},
 	{
 		"c": "around",
-		"t": "source.perl meta.moose.perl keyword.other.attribute.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs keyword.other.attribute.moose.perl",
 		"r": {
 			"dark_plus": "keyword: #569CD6",
 			"light_plus": "keyword: #0000FF",
@@ -5380,7 +5710,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.perl meta.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5831,7 +6161,7 @@
 	},
 	{
 		"c": "augment",
-		"t": "source.perl meta.moose.perl keyword.other.attribute.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs keyword.other.attribute.moose.perl",
 		"r": {
 			"dark_plus": "keyword: #569CD6",
 			"light_plus": "keyword: #0000FF",
@@ -5842,7 +6172,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.perl meta.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -5996,7 +6326,7 @@
 	},
 	{
 		"c": "override",
-		"t": "source.perl meta.moose.perl keyword.other.attribute.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs keyword.other.attribute.moose.perl",
 		"r": {
 			"dark_plus": "keyword: #569CD6",
 			"light_plus": "keyword: #0000FF",
@@ -6007,7 +6337,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.perl meta.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -6282,7 +6612,7 @@
 	},
 	{
 		"c": "extends",
-		"t": "source.perl meta.moose.perl keyword.control.moose.perl keyword.control.import.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs keyword.control.moose.perl keyword.control.import.moose.perl",
 		"r": {
 			"dark_plus": "keyword.control: #C586C0",
 			"light_plus": "keyword.control: #AF00DB",
@@ -6293,7 +6623,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.perl meta.moose.perl keyword.control.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs keyword.control.moose.perl",
 		"r": {
 			"dark_plus": "keyword.control: #C586C0",
 			"light_plus": "keyword.control: #AF00DB",
@@ -6359,7 +6689,7 @@
 	},
 	{
 		"c": "augment",
-		"t": "source.perl meta.moose.perl keyword.other.attribute.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs keyword.other.attribute.moose.perl",
 		"r": {
 			"dark_plus": "keyword: #569CD6",
 			"light_plus": "keyword: #0000FF",
@@ -6370,7 +6700,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.perl meta.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -6381,7 +6711,7 @@
 	},
 	{
 		"c": "base_method1",
-		"t": "source.perl meta.moose.perl entity.name.function.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs entity.name.function.perl",
 		"r": {
 			"dark_plus": "entity.name.function: #DCDCAA",
 			"light_plus": "entity.name.function: #795E26",
@@ -6392,7 +6722,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.perl meta.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -6788,7 +7118,7 @@
 	},
 	{
 		"c": "confess",
-		"t": "source.perl meta.moose.perl support.function.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs support.function.moose.perl",
 		"r": {
 			"dark_plus": "support.function: #DCDCAA",
 			"light_plus": "support.function: #795E26",
@@ -6799,7 +7129,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.perl meta.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7338,7 +7668,7 @@
 	},
 	{
 		"c": "override",
-		"t": "source.perl meta.moose.perl keyword.other.attribute.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs keyword.other.attribute.moose.perl",
 		"r": {
 			"dark_plus": "keyword: #569CD6",
 			"light_plus": "keyword: #0000FF",
@@ -7349,7 +7679,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.perl meta.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",
@@ -7360,7 +7690,7 @@
 	},
 	{
 		"c": "base_method2",
-		"t": "source.perl meta.moose.perl entity.name.function.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs entity.name.function.perl",
 		"r": {
 			"dark_plus": "entity.name.function: #DCDCAA",
 			"light_plus": "entity.name.function: #795E26",
@@ -7371,7 +7701,7 @@
 	},
 	{
 		"c": " ",
-		"t": "source.perl meta.moose.perl",
+		"t": "source.perl meta.moose.perl meta.leading-tabs",
 		"r": {
 			"dark_plus": "default: #D4D4D4",
 			"light_plus": "default: #000000",

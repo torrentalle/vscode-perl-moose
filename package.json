@@ -31,6 +31,27 @@
         ],
         "scopeName": "source.perl.moose",
         "path": "./syntaxes/perl-moose.tmLanguage.json"
+      },
+      {
+        "injectTo": [
+          "source.perl"
+        ],
+        "scopeName": "source.perl.package.moose",
+        "path": "./syntaxes/packages/moose.tmLanguage.json"
+      },
+      {
+        "injectTo": [
+          "source.perl"
+        ],
+        "scopeName": "source.perl.package.moose.role",
+        "path": "./syntaxes/packages/moose-role.tmLanguage.json"
+      },
+      {
+        "injectTo": [
+          "source.perl"
+        ],
+        "scopeName": "source.perl.package.moose.util.typeconstraints",
+        "path": "./syntaxes/packages/moose-util-typeconstraints.tmLanguage.json"
       }
     ]
   },
