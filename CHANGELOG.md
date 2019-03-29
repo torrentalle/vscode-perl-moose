@@ -3,10 +3,14 @@ All notable changes to the "perl-moose" extension will be documented in this fil
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [Unreleased]
+
+- Fixed grammar detection when multiple Moose packages are used in the same file.
+
 
 ## [0.1.1] - 2019-03-23
 
-- Support for Mouse. @d9705996
+- Added support for Mouse. @d9705996
 
 
 ## [0.1.0] - 2019-03-13

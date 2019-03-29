@@ -1,0 +1,24 @@
+$schema: 'https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json'
+information_for_contributors:
+  - >-
+    To modify Perl Moose Textmate grammar you mus edit the file
+    src/syntaxes/perl-moose.tmLanguage.yaml then, run following
+    command to generate extension source code.
+  - npm run generate:syntax
+
+name: Moose::Role
+scopeName: source.perl.package.moose.role
+injectionSelector: L:meta.role.moose.perl -comment -string -text
+patterns:
+  - include: '#moose_role'
+
+repository:
+  moose_role:
+    name: meta.role.moose.perl
+    patterns:
+      - name: constant.language.type.modifier.moose.perl
+        match: \b(-traits)\s*(?==>)
+      - name: keyword.other.role.moose.perl
+        match: \b(requires|excludes)\b
+      - include: 'source.perl.package.moose'
+

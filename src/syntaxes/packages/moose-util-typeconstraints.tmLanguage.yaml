@@ -1,0 +1,44 @@
+$schema: 'https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json'
+information_for_contributors:
+  - >-
+    To modify Perl Moose Textmate grammar you mus edit the file
+    src/syntaxes/perl-moose.tmLanguage.yaml then, run following
+    command to generate extension source code.
+  - npm run generate:syntax
+
+name: Moose::Util::TypeConstraints
+scopeName: source.perl.package.moose.util.typeconstraints
+injectionSelector: L:meta.type.constraint.moose.perl -comment -string -text
+patterns:
+  - include: '#moose_type_constraint'
+
+repository:
+  moose_type_constraint:
+    patterns:
+      - name: keyword.control.moose.perl
+        match: \b(type|subtype|as|where|message|inline_as|match_on_type)\b
+      - name: keyword.control.moose.perl
+        match: (?<!->)\b(coerce)\b
+      - name: keyword.control.moose.perl
+        match: \b(from|via)\b
+      - name:  keyword.other.type.moose.perl
+        match: \b(class_type|role_type|maybe_type|duck_type|enum|union)\b
+      - name:  support.function.moose.perl
+        match: \b(find|register|create_(parameterized|class|role|enum|duck)|find_or_(parse|create_isa|create_does))_type_constraint\b
+      - name:  support.function.moose.perl
+        match: \b(normalize_type_constraint_name)\b
+      - name:  support.function.moose.perl
+        match: \b(create_type_constraint_union)\b
+      - name:  support.function.moose.perl
+        match: \b(create_named_type_constraint_union)\b
+      - name:  support.function.moose.perl
+        match: \b(get_type_constraint_registry)\b
+      - name:  support.function.moose.perl
+        match: \b(list_all_(builtin_type_constraints|type_constraints))\b
+      - name:  support.function.moose.perl
+        match: \b(export_type_constraints_as_functions)\b
+      - name:  support.function.moose.perl
+        match: \b(get_all_parameterizable_types)\b
+      - name:  support.function.moose.perl
+        match: \b(add_parameterizable_type)\b
+
