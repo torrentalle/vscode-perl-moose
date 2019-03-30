@@ -20,8 +20,8 @@ See [CHANGELOG.md](CHANGELOG.md) to see latest changes
 
 ## Contributing
 
-The main grammar is stored in [syntaxes/perl-moose.tmLanguage.json](syntaxes/perl-moose.tmLanguage.json).
-This file is generated from [src/syntaxes/perl-moose.tmLanguage.yaml](src/syntaxes/perl-moose.tmLanguage.yaml):
+The grammar sources is written in YAML in [src/syntaxes/](src/syntaxes/) folder and converted
+to textmate JSON format in build phase.
 
 ### Building
 
