@@ -66,6 +66,13 @@
         ],
         "scopeName": "source.perl.package.moose.util.typeconstraints",
         "path": "./syntaxes/packages/moose-util-typeconstraints.tmLanguage.json"
+      },
+      {
+        "injectTo": [
+          "source.perl"
+        ],
+        "scopeName": "source.perl.package.moose.test",
+        "path": "./syntaxes/packages/moose-test.tmLanguage.json"
       }
     ]
   },

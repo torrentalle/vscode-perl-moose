@@ -1,0 +1,25 @@
+$schema: 'https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json'
+information_for_contributors:
+  - >-
+    To modify Perl Moose Textmate grammar you mus edit the file
+    src/syntaxes/perl-moose.tmLanguage.yaml then, run following
+    command to generate extension source code.
+  - npm run generate:syntax
+
+name: Moose::Test
+scopeName: source.perl.package.moose.test
+injectionSelector: L:meta.test.moose.perl -comment -string -text
+patterns:
+  - include: '#moose_test'
+
+repository:
+  moose_test:
+    patterns:
+      - name:  support.function.moose.perl
+        match: \b(meta_ok)\b
+      - name:  support.function.moose.perl
+        match: \b(does_ok)\b
+      - name:  support.function.moose.perl
+        match: \b(has_attribute_ok)\b
+      - name:  support.function.moose.perl
+        match: \b(with_immutable)\b
