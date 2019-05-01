@@ -5,7 +5,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
-- Syntax highlight for **Moose::Deprecated**, **Moose::Exporter**, **Moose::Object**
+- Syntax highlight for **Moose::Deprecated**, **Moose::Exporter**, **Moose::Object**, **Moose::Util**
 
 
 ## [0.1.2] - 2019-03-30
