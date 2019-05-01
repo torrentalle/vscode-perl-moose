@@ -43,6 +43,13 @@
         "injectTo": [
           "source.perl"
         ],
+        "scopeName": "source.perl.package.moose.exporter",
+        "path": "./syntaxes/packages/moose-exporter.tmLanguage.json"
+      },
+      {
+        "injectTo": [
+          "source.perl"
+        ],
         "scopeName": "source.perl.package.moose.role",
         "path": "./syntaxes/packages/moose-role.tmLanguage.json"
       },

@@ -2398,18 +2398,7 @@
 		}
 	},
 	{
-		"c": "TestMooseRole",
-		"t": "source.perl meta.moose.perl meta.leading-tabs keyword.control.moose.perl entity.name.class.moose.perl",
-		"r": {
-			"dark_plus": "entity.name.class: #4EC9B0",
-			"light_plus": "entity.name.class: #267F99",
-			"dark_vs": "keyword.control: #569CD6",
-			"light_vs": "keyword.control: #0000FF",
-			"hc_black": "entity.name.class: #4EC9B0"
-		}
-	},
-	{
-		"c": ";",
+		"c": "TestMooseRole;",
 		"t": "source.perl meta.moose.perl",
 		"r": {
 			"dark_plus": "default: #D4D4D4",

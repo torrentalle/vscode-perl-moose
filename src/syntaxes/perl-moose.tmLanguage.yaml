@@ -33,6 +33,14 @@ repository:
             name: entity.name.type.class.perl
           '2':
             name: constant.language.type.modifier.moose.perl
+      - name: meta.exporter.moose.perl
+        begin: (?<=use)\s+((?:Moose|Mouse)::Exporter)(?=[\s;])
+        beginCaptures:
+          '1':
+            name: entity.name.class.moose.perl
+        end: (\b)(?=^\s*package\s|no\s+\1[\s;])
+        patterns:
+          - include: '#source'
       - name: meta.role.moose.perl
         begin: (?<=use)\s+((?:Moose|Mouse|Moo)::Role)(?=[\s;])
         beginCaptures:
