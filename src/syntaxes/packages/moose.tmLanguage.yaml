@@ -15,8 +15,6 @@ patterns:
 repository:
   moose:
     patterns:
-      - begin: (?<=use)\s+(Goose|Gouse|Goo)(?=[\s;])
-        name:  entity.name.type.class.perl
       - match: \s*(-meta_name)\b
         captures:
           '1':
