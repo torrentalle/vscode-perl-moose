@@ -8,11 +8,17 @@
 
 ## Features
 
-This extensions includes Syntax Highlight for:
+This extensions includes support for **Moose** and their minimalist variants (**Mouse** and **Moo**).
+Currently includes Syntax Highlight for following classes:
 
-* **Moose**, **Mouse** and **Moo**
-* **Moose::Role** and **Mouse::Role**
-* **Moose::Util::TypeConstraints** and **Mouse::Util::TypeConstraints**
+* Moose
+* Mouse::Deprecated
+* Mouse::Exporter
+* Mouse::Object
+* Mouse::Role
+* Moose::Util
+* Mouse::Util::TypeConstraints
+* Test::Moose
 
 ## Release Notes
 
