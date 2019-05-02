@@ -26,6 +26,23 @@ repository:
         end: (\b)(?=^\s*package\s|no\s+\1[\s;])
         patterns:
           - include: '#source'
+      - name: meta.moose.deprecated.perl
+        match: (?<=use)\s+(Moose::Deprecated)[\s;]*(-api-version)?
+        captures:
+          '1':
+            name: entity.name.type.class.perl
+          '2':
+            name: constant.language.type.modifier.moose.perl
+      - name: meta.exporter.moose.perl
+        begin: (?<=use)\s+((?:Moose|Mouse)::Exporter)(?=[\s;])
+        beginCaptures:
+          '1':
+            name: entity.name.class.moose.perl
+        end: (\b)(?=^\s*package\s|no\s+\1[\s;])
+        patterns:
+          - include: '#source'
+      - name: support.function.moose.perl
+        match: (?<=->)(new|BUILDARGS|does|DOES|isa|dump|DESTROY)\b
       - name: meta.role.moose.perl
         begin: (?<=use)\s+((?:Moose|Mouse|Moo)::Role)(?=[\s;])
         beginCaptures:
@@ -34,8 +51,24 @@ repository:
         end: (\b)(?=^\s*package\s|no\s+\1[\s;])
         patterns:
           - include: '#source'
+      - name: meta.util.moose.perl
+        begin: (?<=use)\s+((?:Moose|Mouse|Moo)::Util)(?=[\s;])
+        beginCaptures:
+          '1':
+            name: entity.name.class.moose.perl
+        end: (\b)(?=^\s*package\s|no\s+\1[\s;])
+        patterns:
+          - include: '#source'
       - name: meta.type.constraint.moose.perl
         begin: (?<=use)\s+((?:Moose|Mouse)::Util::TypeConstraints)(?=[\s;])
+        beginCaptures:
+          '1':
+            name: entity.name.class.moose.perl
+        end: (\b)(?=^\s*package\s|no\s+\1[\s;])
+        patterns:
+          - include: '#source'
+      - name: meta.test.moose.perl
+        begin: (?<=use)\s+(Test::(?:Moose|Mouse))(?=[\s;])
         beginCaptures:
           '1':
             name: entity.name.class.moose.perl

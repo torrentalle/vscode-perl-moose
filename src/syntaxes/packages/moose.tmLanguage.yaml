@@ -21,7 +21,7 @@ repository:
             name: entity.other.attribute-name.moose.perl
         name: constant.language.type.modifier.moose.perl
       # Todo: review if we need to remove entity.name.class.moose.perl
-      - match: \b(extends|with)(?:\s+([-a-zA-Z0-9_]+))?\s*
+      - match: \b(extends|with)\b(?:([-a-zA-Z0-9_]+))?\s*
         captures:
           '1':
             name: keyword.control.import.moose.perl

@@ -3,6 +3,10 @@ All notable changes to the "perl-moose" extension will be documented in this fil
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [Unreleased]
+
+- Syntax highlight for **Moose::Deprecated**, **Moose::Exporter**, **Moose::Object**, **Moose::Util** and **Test::Moose**
+
 
 ## [0.1.2] - 2019-03-30
 

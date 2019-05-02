@@ -1,0 +1,1223 @@
+[
+	{
+		"c": "=pod",
+		"t": "source.perl comment.block.documentation.perl storage.type.class.pod.perl",
+		"r": {
+			"dark_plus": "storage.type: #569CD6",
+			"light_plus": "storage.type: #0000FF",
+			"dark_vs": "storage.type: #569CD6",
+			"light_vs": "storage.type: #0000FF",
+			"hc_black": "storage.type: #569CD6"
+		}
+	},
+	{
+		"c": "Perl Moose Exporter package to test VSCode colorize",
+		"t": "source.perl comment.block.documentation.perl",
+		"r": {
+			"dark_plus": "comment: #6A9955",
+			"light_plus": "comment: #008000",
+			"dark_vs": "comment: #6A9955",
+			"light_vs": "comment: #008000",
+			"hc_black": "comment: #7CA668"
+		}
+	},
+	{
+		"c": "This file is used to to test VSCode Colorization",
+		"t": "source.perl comment.block.documentation.perl",
+		"r": {
+			"dark_plus": "comment: #6A9955",
+			"light_plus": "comment: #008000",
+			"dark_vs": "comment: #6A9955",
+			"light_vs": "comment: #008000",
+			"hc_black": "comment: #7CA668"
+		}
+	},
+	{
+		"c": "=cut",
+		"t": "source.perl comment.block.documentation.perl storage.type.class.pod.perl",
+		"r": {
+			"dark_plus": "storage.type: #569CD6",
+			"light_plus": "storage.type: #0000FF",
+			"dark_vs": "storage.type: #569CD6",
+			"light_vs": "storage.type: #0000FF",
+			"hc_black": "storage.type: #569CD6"
+		}
+	},
+	{
+		"c": "package",
+		"t": "source.perl meta.class.perl keyword.control.perl",
+		"r": {
+			"dark_plus": "keyword.control: #C586C0",
+			"light_plus": "keyword.control: #AF00DB",
+			"dark_vs": "keyword.control: #569CD6",
+			"light_vs": "keyword.control: #0000FF",
+			"hc_black": "keyword.control: #C586C0"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.perl meta.class.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "TestMooseExporter",
+		"t": "source.perl meta.class.perl entity.name.type.class.perl",
+		"r": {
+			"dark_plus": "entity.name.type: #4EC9B0",
+			"light_plus": "entity.name.type: #267F99",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "entity.name.type: #4EC9B0"
+		}
+	},
+	{
+		"c": ";",
+		"t": "source.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "use",
+		"t": "source.perl keyword.control.perl",
+		"r": {
+			"dark_plus": "keyword.control: #C586C0",
+			"light_plus": "keyword.control: #AF00DB",
+			"dark_vs": "keyword.control: #569CD6",
+			"light_vs": "keyword.control: #0000FF",
+			"hc_black": "keyword.control: #C586C0"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.perl meta.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "Moose",
+		"t": "source.perl meta.moose.perl entity.name.class.moose.perl",
+		"r": {
+			"dark_plus": "entity.name.class: #4EC9B0",
+			"light_plus": "entity.name.class: #267F99",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "entity.name.class: #4EC9B0"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.perl meta.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "(",
+		"t": "source.perl meta.moose.perl punctuation.section.scope.begin.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": ")",
+		"t": "source.perl meta.moose.perl punctuation.section.scope.end.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": ";",
+		"t": "source.perl meta.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "use",
+		"t": "source.perl meta.moose.perl keyword.control.perl",
+		"r": {
+			"dark_plus": "keyword.control: #C586C0",
+			"light_plus": "keyword.control: #AF00DB",
+			"dark_vs": "keyword.control: #569CD6",
+			"light_vs": "keyword.control: #0000FF",
+			"hc_black": "keyword.control: #C586C0"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "Moose::Exporter",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl entity.name.class.moose.perl",
+		"r": {
+			"dark_plus": "entity.name.class: #4EC9B0",
+			"light_plus": "entity.name.class: #267F99",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "entity.name.class: #4EC9B0"
+		}
+	},
+	{
+		"c": ";",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "use",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl keyword.control.perl",
+		"r": {
+			"dark_plus": "keyword.control: #C586C0",
+			"light_plus": "keyword.control: #AF00DB",
+			"dark_vs": "keyword.control: #569CD6",
+			"light_vs": "keyword.control: #0000FF",
+			"hc_black": "keyword.control: #C586C0"
+		}
+	},
+	{
+		"c": " Some::Random ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "(",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl punctuation.section.scope.begin.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": ")",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl punctuation.section.scope.end.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": ";",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "Moose::Exporter",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl entity.name.type.class.perl",
+		"r": {
+			"dark_plus": "entity.name.type: #4EC9B0",
+			"light_plus": "entity.name.type: #267F99",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "entity.name.type: #4EC9B0"
+		}
+	},
+	{
+		"c": "->",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl keyword.operator.comparison.perl",
+		"r": {
+			"dark_plus": "keyword.operator: #D4D4D4",
+			"light_plus": "keyword.operator: #000000",
+			"dark_vs": "keyword.operator: #D4D4D4",
+			"light_vs": "keyword.operator: #000000",
+			"hc_black": "keyword.operator: #D4D4D4"
+		}
+	},
+	{
+		"c": "setup_import_methods",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl support.function.moose.exporter.perl",
+		"r": {
+			"dark_plus": "support.function: #DCDCAA",
+			"light_plus": "support.function: #795E26",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "support.function: #DCDCAA"
+		}
+	},
+	{
+		"c": "(",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "    ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl meta.leading-tabs meta.odd-tab",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "with_meta ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl meta.leading-tabs constant.language.setup_import_methods.key.moose.perl",
+		"r": {
+			"dark_plus": "constant.language: #569CD6",
+			"light_plus": "constant.language: #0000FF",
+			"dark_vs": "constant.language: #569CD6",
+			"light_vs": "constant.language: #0000FF",
+			"hc_black": "constant.language: #569CD6"
+		}
+	},
+	{
+		"c": "=>",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl keyword.operator.comparison.perl",
+		"r": {
+			"dark_plus": "keyword.operator: #D4D4D4",
+			"light_plus": "keyword.operator: #000000",
+			"dark_vs": "keyword.operator: #D4D4D4",
+			"light_vs": "keyword.operator: #000000",
+			"hc_black": "keyword.operator: #D4D4D4"
+		}
+	},
+	{
+		"c": " [ ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "'",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl string.quoted.single.perl punctuation.definition.string.begin.perl",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": "has_rw",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl string.quoted.single.perl",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": "'",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl string.quoted.single.perl punctuation.definition.string.end.perl",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": ", ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "'",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl string.quoted.single.perl punctuation.definition.string.begin.perl",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": "sugar2",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl string.quoted.single.perl",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": "'",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl string.quoted.single.perl punctuation.definition.string.end.perl",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": " ],",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "    ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl meta.leading-tabs meta.odd-tab",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "as_is     ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl meta.leading-tabs constant.language.setup_import_methods.key.moose.perl",
+		"r": {
+			"dark_plus": "constant.language: #569CD6",
+			"light_plus": "constant.language: #0000FF",
+			"dark_vs": "constant.language: #569CD6",
+			"light_vs": "constant.language: #0000FF",
+			"hc_black": "constant.language: #569CD6"
+		}
+	},
+	{
+		"c": "=>",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl keyword.operator.comparison.perl",
+		"r": {
+			"dark_plus": "keyword.operator: #D4D4D4",
+			"light_plus": "keyword.operator: #000000",
+			"dark_vs": "keyword.operator: #D4D4D4",
+			"light_vs": "keyword.operator: #000000",
+			"hc_black": "keyword.operator: #D4D4D4"
+		}
+	},
+	{
+		"c": " [ ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "'",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl string.quoted.single.perl punctuation.definition.string.begin.perl",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": "sugar3",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl string.quoted.single.perl",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": "'",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl string.quoted.single.perl punctuation.definition.string.end.perl",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": ", \\&Some::Random::thing, ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "'",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl string.quoted.single.perl punctuation.definition.string.begin.perl",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": "Some::Random::other_thing",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl string.quoted.single.perl",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": "'",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl string.quoted.single.perl punctuation.definition.string.end.perl",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": " ],",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "    ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl meta.leading-tabs meta.odd-tab",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "also      ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl meta.leading-tabs constant.language.setup_import_methods.key.moose.perl",
+		"r": {
+			"dark_plus": "constant.language: #569CD6",
+			"light_plus": "constant.language: #0000FF",
+			"dark_vs": "constant.language: #569CD6",
+			"light_vs": "constant.language: #0000FF",
+			"hc_black": "constant.language: #569CD6"
+		}
+	},
+	{
+		"c": "=>",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl keyword.operator.comparison.perl",
+		"r": {
+			"dark_plus": "keyword.operator: #D4D4D4",
+			"light_plus": "keyword.operator: #000000",
+			"dark_vs": "keyword.operator: #D4D4D4",
+			"light_vs": "keyword.operator: #000000",
+			"hc_black": "keyword.operator: #D4D4D4"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "'",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl string.quoted.single.perl punctuation.definition.string.begin.perl",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": "Moose",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl string.quoted.single.perl",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": "'",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl string.quoted.single.perl punctuation.definition.string.end.perl",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": ",",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": ");",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "sub",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl meta.function.perl storage.type.sub.perl",
+		"r": {
+			"dark_plus": "storage.type: #569CD6",
+			"light_plus": "storage.type: #0000FF",
+			"dark_vs": "storage.type: #569CD6",
+			"light_vs": "storage.type: #0000FF",
+			"hc_black": "storage.type: #569CD6"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl meta.function.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "has_rw",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl meta.function.perl entity.name.function.perl",
+		"r": {
+			"dark_plus": "entity.name.function: #DCDCAA",
+			"light_plus": "entity.name.function: #795E26",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "entity.name.function: #DCDCAA"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl meta.function.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "{",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "    ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl meta.leading-tabs meta.odd-tab",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "my",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl storage.modifier.perl",
+		"r": {
+			"dark_plus": "storage.modifier: #569CD6",
+			"light_plus": "storage.modifier: #0000FF",
+			"dark_vs": "storage.modifier: #569CD6",
+			"light_vs": "storage.modifier: #0000FF",
+			"hc_black": "storage.modifier: #569CD6"
+		}
+	},
+	{
+		"c": " ( ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "$",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl variable.other.readwrite.global.perl punctuation.definition.variable.perl",
+		"r": {
+			"dark_plus": "variable: #9CDCFE",
+			"light_plus": "variable: #001080",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "variable: #9CDCFE"
+		}
+	},
+	{
+		"c": "meta",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl variable.other.readwrite.global.perl",
+		"r": {
+			"dark_plus": "variable: #9CDCFE",
+			"light_plus": "variable: #001080",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "variable: #9CDCFE"
+		}
+	},
+	{
+		"c": ", ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "$",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl variable.other.readwrite.global.perl punctuation.definition.variable.perl",
+		"r": {
+			"dark_plus": "variable: #9CDCFE",
+			"light_plus": "variable: #001080",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "variable: #9CDCFE"
+		}
+	},
+	{
+		"c": "name",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl variable.other.readwrite.global.perl",
+		"r": {
+			"dark_plus": "variable: #9CDCFE",
+			"light_plus": "variable: #001080",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "variable: #9CDCFE"
+		}
+	},
+	{
+		"c": ", ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "%",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl variable.other.readwrite.global.perl punctuation.definition.variable.perl",
+		"r": {
+			"dark_plus": "variable: #9CDCFE",
+			"light_plus": "variable: #001080",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "variable: #9CDCFE"
+		}
+	},
+	{
+		"c": "options",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl variable.other.readwrite.global.perl",
+		"r": {
+			"dark_plus": "variable: #9CDCFE",
+			"light_plus": "variable: #001080",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "variable: #9CDCFE"
+		}
+	},
+	{
+		"c": " ) = ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "@",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl variable.other.readwrite.global.special.perl punctuation.definition.variable.perl",
+		"r": {
+			"dark_plus": "variable: #9CDCFE",
+			"light_plus": "variable: #001080",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "variable: #9CDCFE"
+		}
+	},
+	{
+		"c": "_",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl variable.other.readwrite.global.special.perl",
+		"r": {
+			"dark_plus": "variable: #9CDCFE",
+			"light_plus": "variable: #001080",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "variable: #9CDCFE"
+		}
+	},
+	{
+		"c": ";",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "    ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl meta.leading-tabs meta.odd-tab",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "$",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl variable.other.readwrite.global.perl punctuation.definition.variable.perl",
+		"r": {
+			"dark_plus": "variable: #9CDCFE",
+			"light_plus": "variable: #001080",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "variable: #9CDCFE"
+		}
+	},
+	{
+		"c": "meta",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl variable.other.readwrite.global.perl",
+		"r": {
+			"dark_plus": "variable: #9CDCFE",
+			"light_plus": "variable: #001080",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "variable: #9CDCFE"
+		}
+	},
+	{
+		"c": "->",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl keyword.operator.comparison.perl",
+		"r": {
+			"dark_plus": "keyword.operator: #D4D4D4",
+			"light_plus": "keyword.operator: #000000",
+			"dark_vs": "keyword.operator: #D4D4D4",
+			"light_vs": "keyword.operator: #000000",
+			"hc_black": "keyword.operator: #D4D4D4"
+		}
+	},
+	{
+		"c": "add_attribute(",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "    ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl meta.leading-tabs meta.odd-tab",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "    ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl meta.leading-tabs meta.even-tab",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "$",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl variable.other.readwrite.global.perl punctuation.definition.variable.perl",
+		"r": {
+			"dark_plus": "variable: #9CDCFE",
+			"light_plus": "variable: #001080",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "variable: #9CDCFE"
+		}
+	},
+	{
+		"c": "name",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl variable.other.readwrite.global.perl",
+		"r": {
+			"dark_plus": "variable: #9CDCFE",
+			"light_plus": "variable: #001080",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "variable: #9CDCFE"
+		}
+	},
+	{
+		"c": ",",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "    ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl meta.leading-tabs meta.odd-tab",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "    ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl meta.leading-tabs meta.even-tab",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "is ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl meta.leading-tabs constant.language.has.key.moose.perl",
+		"r": {
+			"dark_plus": "constant.language: #569CD6",
+			"light_plus": "constant.language: #0000FF",
+			"dark_vs": "constant.language: #569CD6",
+			"light_vs": "constant.language: #0000FF",
+			"hc_black": "constant.language: #569CD6"
+		}
+	},
+	{
+		"c": "=>",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl keyword.operator.comparison.perl",
+		"r": {
+			"dark_plus": "keyword.operator: #D4D4D4",
+			"light_plus": "keyword.operator: #000000",
+			"dark_vs": "keyword.operator: #D4D4D4",
+			"light_vs": "keyword.operator: #000000",
+			"hc_black": "keyword.operator: #D4D4D4"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "'",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl string.quoted.single.perl punctuation.definition.string.begin.perl",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": "rw",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl string.quoted.single.perl",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": "'",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl string.quoted.single.perl punctuation.definition.string.end.perl",
+		"r": {
+			"dark_plus": "string: #CE9178",
+			"light_plus": "string: #A31515",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "string: #CE9178"
+		}
+	},
+	{
+		"c": ",",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "    ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl meta.leading-tabs meta.odd-tab",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "    ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl meta.leading-tabs meta.even-tab",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "%",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl variable.other.readwrite.global.perl punctuation.definition.variable.perl",
+		"r": {
+			"dark_plus": "variable: #9CDCFE",
+			"light_plus": "variable: #001080",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "variable: #9CDCFE"
+		}
+	},
+	{
+		"c": "options",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl variable.other.readwrite.global.perl",
+		"r": {
+			"dark_plus": "variable: #9CDCFE",
+			"light_plus": "variable: #001080",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "variable: #9CDCFE"
+		}
+	},
+	{
+		"c": ",",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "    ",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl meta.leading-tabs meta.odd-tab",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": ");",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	},
+	{
+		"c": "}",
+		"t": "source.perl meta.moose.perl meta.exporter.moose.perl",
+		"r": {
+			"dark_plus": "default: #D4D4D4",
+			"light_plus": "default: #000000",
+			"dark_vs": "default: #D4D4D4",
+			"light_vs": "default: #000000",
+			"hc_black": "default: #FFFFFF"
+		}
+	}
+]
