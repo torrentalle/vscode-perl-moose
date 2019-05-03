@@ -20,7 +20,7 @@ testRunner.configure({
     timeout: 60000,
     reporter: process.env.CODE_TESTS_REPORTER || "spec",
     reporterOptions: {
-        suiteName: "Installation Tests(" + process.platform +")",
+        suiteName: "Installation Tests (" + process.platform +")",
         output: ".vscode-test/reports/TEST-install-" + process.platform + ".xml",
     }
 
