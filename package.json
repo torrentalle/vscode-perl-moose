@@ -88,7 +88,7 @@
     "postinstall": "node ./node_modules/vscode/bin/install",
     "build": "tsc -p tsconfig.json && npm run build:syntax --silent",
     "build:syntax": "node ./scripts/generate-syntax.js",
-    "test": "CODE_DISABLE_EXTENSIONS=1 node ./node_modules/vscode/bin/test",
+    "test": "node ./node_modules/vscode/bin/test",
     "test:package": "node ./scripts/test-package.js",
     "vscode:prepublish": "npm run build",
     "build:package": "vsce package",
