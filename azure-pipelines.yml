@@ -28,7 +28,7 @@ jobs:
           CODE_TESTS_REPORTER: xunit
       - task: PublishTestResults@2
         inputs:
-          testResultsFormat: 'XUnit'
+          testResultsFormat: 'JUnit'
           testResultsFiles: '**/TEST-*.xml'
   - job: macOS
     pool:
@@ -59,7 +59,7 @@ jobs:
           CODE_TESTS_REPORTER: xunit
       - task: PublishTestResults@2
         inputs:
-          testResultsFormat: 'XUnit'
+          testResultsFormat: 'JUnit'
           testResultsFiles: '**/TEST-*.xml'
   - job: Linux
     pool:
@@ -96,5 +96,5 @@ jobs:
           CODE_TESTS_REPORTER: xunit
       - task: PublishTestResults@2
         inputs:
-          testResultsFormat: 'XUnit'
+          testResultsFormat: 'JUnit'
           testResultsFiles: '**/TEST-*.xml'
