@@ -26,7 +26,7 @@ jobs:
           customCommand: 'run test'
         env:
           CODE_TESTS_REPORTER: xunit
-      - task: PublishTestResults@1
+      - task: PublishTestResults@2
         inputs:
           testResultsFormat: 'XUnit'
           testResultsFiles: '**/TEST-*.xml'
@@ -57,7 +57,7 @@ jobs:
           customCommand: 'run test'          
         env:
           CODE_TESTS_REPORTER: xunit
-      - task: PublishTestResults@1
+      - task: PublishTestResults@2
         inputs:
           testResultsFormat: 'XUnit'
           testResultsFiles: '**/TEST-*.xml'
@@ -94,7 +94,7 @@ jobs:
         env:
           DISPLAY: :10
           CODE_TESTS_REPORTER: xunit
-      - task: PublishTestResults@1
+      - task: PublishTestResults@2
         inputs:
           testResultsFormat: 'XUnit'
           testResultsFiles: '**/TEST-*.xml'
