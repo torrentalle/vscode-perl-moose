@@ -36,7 +36,7 @@ repository:
             name: storage.modifier.attribute.moose.perl
           '3':
             name: entity.other.attribute-name.moose.perl
-      - match: \b(auto_deref|builder|clearer|coerce|default|documentation|does|handles|is|isa|lazy|lazy_build|metaclass|predicate|required|role_attribute|traits|trigger|weak_ref)\s*(?==>)
+      - match: \b(auto_deref|builder|clearer|coerce|default|documentation|does|handles|init_arg|is|isa|lazy|lazy_build|metaclass|predicate|reader|required|role_attribute|traits|trigger|weak_ref|writer)\s*(?==>)
         name: constant.language.has.key.moose.perl
       - match: \b(before|after|around|override|augment)(?:\s+([-a-zA-Z0-9_]+))?
         captures:
