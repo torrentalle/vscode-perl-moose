@@ -30,6 +30,8 @@ jobs:
         inputs:
           testResultsFormat: 'JUnit'
           testResultsFiles: '**/TEST-*.xml'
+          mergeTestResults: true
+          testRunTitle: 'Extension Tests (win32)'
   - job: macOS
     pool:
       name: Hosted macOS
@@ -61,6 +63,8 @@ jobs:
         inputs:
           testResultsFormat: 'JUnit'
           testResultsFiles: '**/TEST-*.xml'
+          mergeTestResults: true
+          testRunTitle: 'Extension Tests (darwin)'
   - job: Linux
     pool:
       name: Hosted Ubuntu 1604
@@ -98,3 +102,5 @@ jobs:
         inputs:
           testResultsFormat: 'JUnit'
           testResultsFiles: '**/TEST-*.xml'
+          mergeTestResults: true
+          testRunTitle: 'Extension Tests (linux)'
