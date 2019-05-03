@@ -12,6 +12,12 @@
 
 import * as testRunner from 'vscode/lib/testrunner';
 
+// Workaround to display OS in Azure Pipelines
+var os = process.platform.toString();
+if (os == 'win32' ) {
+    os = 'win';
+}
+
 // You can directly control Mocha options by uncommenting the following lines
 // See https://github.com/mochajs/mocha/wiki/Using-mocha-programmatically#set-options for more info
 testRunner.configure({
@@ -20,8 +26,8 @@ testRunner.configure({
     timeout: 60000,
     reporter: process.env.CODE_TESTS_REPORTER || "spec",
     reporterOptions: {
-        suiteName: "Installation Tests (" + process.platform +")",
-        output: ".vscode-test/reports/TEST-install-" + process.platform + ".xml",
+        suiteName: "Installation Tests (" + os +")",
+        output: ".vscode-test/reports/TEST-install-" + os + ".xml",
     }
 
 });
