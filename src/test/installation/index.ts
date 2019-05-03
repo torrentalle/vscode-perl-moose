@@ -17,7 +17,12 @@ import * as testRunner from 'vscode/lib/testrunner';
 testRunner.configure({
     ui: 'tdd', 		 // the TDD UI is being used in extension.test.ts (suite, test, etc.)
     useColors: true, // colored output from test results
-    timeout: 60000
+    timeout: 60000,
+    reporter: process.env.CODE_TESTS_REPORTER || "spec",
+    reporterOptions: {
+        output: ".vscode-test/reports/TEST-install.xml",
+    }
+
 });
 module.exports = testRunner;
 

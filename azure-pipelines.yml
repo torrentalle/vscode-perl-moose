@@ -23,7 +23,13 @@ jobs:
         inputs:
           command: custom
           verbose: false
-          customCommand: 'run test'          
+          customCommand: 'run test'
+        env:
+          CODE_TESTS_REPORTER: xunit
+      - task: PublishTestResults@2
+        inputs:
+          testResultsFormat: 'XUnit'
+          testResultsFiles: '**/TEST-*.xml'
   - job: macOS
     pool:
       name: Hosted macOS
@@ -49,6 +55,12 @@ jobs:
           command: custom
           verbose: false
           customCommand: 'run test'          
+        env:
+          CODE_TESTS_REPORTER: xunit
+      - task: PublishTestResults@2
+        inputs:
+          testResultsFormat: 'XUnit'
+          testResultsFiles: '**/TEST-*.xml'
   - job: Linux
     pool:
       name: Hosted Ubuntu 1604
@@ -81,3 +93,8 @@ jobs:
           customCommand: 'run test'          
         env:
           DISPLAY: :10
+          CODE_TESTS_REPORTER: xunit
+      - task: PublishTestResults@2
+        inputs:
+          testResultsFormat: 'XUnit'
+          testResultsFiles: '**/TEST-*.xml'
