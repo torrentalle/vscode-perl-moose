@@ -1,5 +1,5 @@
 jobs:
-  - job: Test Extension
+  - job: Test
     pool:
       name: Hosted Ubuntu 1604
       demands: npm
@@ -48,8 +48,8 @@ jobs:
         inputs:
           artifactName: 'extension'
           targetPath: '*.vsix'
-  - job: Install Extension (Windows)
-    dependsOn: Test Extension
+  - job: Install_Windows
+    dependsOn: Test
     pool:
       name: Hosted VS2017
       demands: npm
@@ -80,8 +80,8 @@ jobs:
           testResultsFiles: '**/TEST-*.xml'
           mergeTestResults: true
           testRunTitle: 'Installation Tests (win32)'
-  - job: Install Extension (macOS)
-    dependsOn: Test Extension
+  - job: Install_MacOS
+    dependsOn: Test
     pool:
       name: Hosted macOS
       demands: npm
@@ -112,8 +112,8 @@ jobs:
           testResultsFiles: '**/TEST-*.xml'
           mergeTestResults: true
           testRunTitle: 'Installation Tests (macOS)'
-  - job: Install Extension (linux)
-    dependsOn: Test Extension
+  - job: Install_Linux
+    dependsOn: Test
     pool:
       name: Hosted Ubuntu 1604
       demands: npm
@@ -149,4 +149,4 @@ jobs:
           testResultsFormat: 'JUnit'
           testResultsFiles: '**/TEST-*.xml'
           mergeTestResults: true
-          testRunTitle: 'Extension Tests'
+          testRunTitle: 'Installation Tests (Windows)'
