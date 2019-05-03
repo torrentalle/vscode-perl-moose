@@ -1,21 +1,83 @@
-# Node.js
-# Build a general Node.js project with npm.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
-
-trigger:
-- master
-
-pool:
-  vmImage: 'ubuntu-latest'
-
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
-
-- script: |
-    npm install
-    npm run build
-  displayName: 'npm install and build'
+jobs:
+  - job: Windows
+    pool:
+      name: Hosted VS2017
+      demands: npm
+    steps:
+      - task: NodeTool@0
+        displayName: 'Use Node 8.x'
+        inputs:
+          versionSpec: 8.x
+      - task: Npm@1
+        displayName: 'Install dependencies'
+        inputs:
+          verbose: false
+      - task: Npm@1
+        displayName: 'Compile sources'
+        inputs:
+          command: custom
+          verbose: false
+          customCommand: 'run build'
+      - task: Npm@1
+        displayName: 'Run tests'
+        inputs:
+          command: custom
+          verbose: false
+          customCommand: 'run test'          
+  - job: macOS
+    pool:
+      name: Hosted macOS
+      demands: npm
+    steps:
+      - task: NodeTool@0
+        displayName: 'Use Node 8.x'
+        inputs:
+          versionSpec: 8.x
+      - task: Npm@1
+        displayName: 'Install dependencies'
+        inputs:
+          verbose: false
+      - task: Npm@1
+        displayName: 'Compile sources'
+        inputs:
+          command: custom
+          verbose: false
+          customCommand: 'run compile'
+      - task: Npm@1
+        displayName: 'Run tests'
+        inputs:
+          command: custom
+          verbose: false
+          customCommand: 'run test'          
+  - job: Linux
+    pool:
+      name: Hosted Ubuntu 1604
+      demands: npm
+    steps:
+      - task: NodeTool@0
+        displayName: 'Use Node 8.x'
+        inputs:
+          versionSpec: 8.x
+      - task: Npm@1
+        displayName: 'Install dependencies'
+        inputs:
+          verbose: false
+      - task: Npm@1
+        displayName: 'Compile sources'
+        inputs:
+          command: custom
+          verbose: false
+          customCommand: 'run compile'
+      - script: |
+          set -e
+          /usr/bin/Xvfb :10 -ac >> /tmp/Xvfb.out 2>&1 &
+          disown -ar
+        displayName: 'Start xvfb'
+      - task: Npm@1
+        displayName: 'Run tests'
+        inputs:
+          command: custom
+          verbose: false
+          customCommand: 'run test'          
+        env:
+          DISPLAY: :10
