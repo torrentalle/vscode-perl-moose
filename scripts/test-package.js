@@ -60,9 +60,14 @@ function runTests(executablePath) {
 }
 
 function installExtensionAndRunTests(executablePath) {
+    
+    var binPath = executablePath;
 
-    var binPath = executablePath.replace(/code$/,'bin/code');
-    binPath = binPath.replace(/Code\.exe$/i,'bin/code.cmd');
+    if ( binPath.match(/Code\.exe$/)) {
+        binPath = binPath.replace(/Code\.exe$/i,'bin/code.cmd');
+    } else if ( ! binPath.match(/bin\/code/)) {
+        binPath = executablePath.replace(/code$/,'bin/code');
+    }
 
     var args = [
         '--install-extension='+ packageFile,
