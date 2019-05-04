@@ -62,6 +62,7 @@ function runTests(executablePath) {
 function installExtensionAndRunTests(executablePath) {
 
     var binPath = executablePath.replace(/code$/,'bin/code');
+    binPath = binPath.replace(/Code\.exe$/i,'bin/code.cmd');
 
     var args = [
         '--install-extension='+ packageFile,
