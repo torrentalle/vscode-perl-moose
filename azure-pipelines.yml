@@ -52,7 +52,7 @@ jobs:
           OverWrite: true
       - task: PublishPipelineArtifact@0
         inputs:
-          artifactName: 'extension'
+          artifactName: 'package'
           targetPath: 'package'
   - job: Install_Windows
     dependsOn: Test
@@ -74,7 +74,7 @@ jobs:
           verbose: false
       - task: DownloadPipelineArtifact@0
         inputs:
-          artifactName: 'extension'
+          artifactName: 'package'
           targetPath: $(System.DefaultWorkingDirectory)
       - task: Npm@1
         displayName: 'Compile sources'
@@ -117,7 +117,7 @@ jobs:
           verbose: false
       - task: DownloadPipelineArtifact@0
         inputs:
-          artifactName: 'extension'
+          artifactName: 'package'
           targetPath: $(System.DefaultWorkingDirectory)
       - task: Npm@1
         displayName: 'Compile sources'
@@ -160,7 +160,7 @@ jobs:
           verbose: false
       - task: DownloadPipelineArtifact@0
         inputs:
-          artifactName: 'extension'
+          artifactName: 'package'
           targetPath: $(System.DefaultWorkingDirectory)
       - task: Npm@1
         displayName: 'Compile sources'
