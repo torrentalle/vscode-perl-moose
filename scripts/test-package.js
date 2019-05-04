@@ -65,7 +65,7 @@ function installExtensionAndRunTests(executablePath) {
 
     if ( binPath.match(/Code\.exe$/)) {
         binPath = binPath.replace(/Code\.exe$/i,'bin/code.cmd');
-    } else if ( ! binPath.match(/bin\/code/)) {
+    } else if ( ! binPath.match(/bin\/code$/)) {
         binPath = executablePath.replace(/code$/,'bin/code');
     }
 
