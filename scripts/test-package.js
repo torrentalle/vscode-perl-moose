@@ -63,11 +63,17 @@ function installExtensionAndRunTests(executablePath) {
     
     var binPath = executablePath;
 
-    if ( binPath.match(/Code\.exe$/)) {
+    // Fix bin paths
+    if (process.platform === 'win32') {
         binPath = binPath.replace(/Code\.exe$/i,'bin/code.cmd');
-    } else if ( ! binPath.match(/bin\/code$/)) {
+    }
+    else if (process.platform === 'darwin') {
+        binPath = binPath.replace(/MacOS\/Electron$/i,'Resources/app/bin/code');
+    }
+    else {
         binPath = executablePath.replace(/code$/,'bin/code');
     }
+    binPath = path.resolve(binPath);
 
     var args = [
         '--install-extension='+ packageFile,
