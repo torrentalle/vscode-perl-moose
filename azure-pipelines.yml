@@ -48,12 +48,8 @@ jobs:
       - task: CopyFiles@2
         inputs:
           Contents: '*.vsix'
-          TargetFolder: 'package/'
-          OverWrite: true
+          TargetFolder: '$(Build.ArtifactStagingDirectory)'
       - task: PublishPipelineArtifact@0
-        inputs:
-          artifactName: 'extension'
-          targetPath: 'package'
   - job: Install_Windows
     dependsOn: Test
     condition: |
@@ -73,9 +69,6 @@ jobs:
         inputs:
           verbose: false
       - task: DownloadPipelineArtifact@0
-        inputs:
-          artifactName: 'extension'
-          targetPath: $(System.DefaultWorkingDirectory)
       - task: Npm@1
         displayName: 'Compile sources'
         inputs:
@@ -116,9 +109,6 @@ jobs:
         inputs:
           verbose: false
       - task: DownloadPipelineArtifact@0
-        inputs:
-          artifactName: 'extension'
-          targetPath: $(System.DefaultWorkingDirectory)
       - task: Npm@1
         displayName: 'Compile sources'
         inputs:
@@ -159,9 +149,6 @@ jobs:
         inputs:
           verbose: false
       - task: DownloadPipelineArtifact@0
-        inputs:
-          artifactName: 'extension'
-          targetPath: $(System.DefaultWorkingDirectory)
       - task: Npm@1
         displayName: 'Compile sources'
         inputs:
