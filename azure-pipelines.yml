@@ -48,12 +48,18 @@ jobs:
       - task: CopyFiles@2
         inputs:
           Contents: '*.vsix'
-          TargetFolder: $(Build.ArtifactStagingDirectory)
+          TargetFolder: 'package/'
+          OverWrite: true
       - task: PublishPipelineArtifact@0
         inputs:
           artifactName: 'package'
+          targetPath: 'package'
   - job: Install_Windows
     dependsOn: Test
+    condition: |
+      or (
+        eq(variables['Build.SourceBranch'], 'refs/heads/master'),
+        eq(variables['Build.Reason'], 'PullRequest') )
     pool:
       name: Hosted VS2017
       demands: npm
@@ -93,6 +99,10 @@ jobs:
         condition: always()
   - job: Install_MacOS
     dependsOn: Test
+    condition: |
+      or (
+        eq(variables['Build.SourceBranch'], 'refs/heads/master'),
+        eq(variables['Build.Reason'], 'PullRequest') )
     pool:
       name: Hosted macOS
       demands: npm
@@ -132,6 +142,10 @@ jobs:
         condition: always()
   - job: Install_Linux
     dependsOn: Test
+    condition: |
+      or (
+        eq(variables['Build.SourceBranch'], 'refs/heads/master'),
+        eq(variables['Build.Reason'], 'PullRequest') )
     pool:
       name: Hosted Ubuntu 1604
       demands: npm
