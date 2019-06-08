@@ -12,12 +12,12 @@ This extensions includes support for **Moose** and their minimalist variants (**
 Currently includes Syntax Highlight for following classes:
 
 * Moose
-* Mouse::Deprecated
-* Mouse::Exporter
-* Mouse::Object
-* Mouse::Role
+* Moose::Deprecated
+* Moose::Exporter
+* Moose::Object
+* Moose::Role
 * Moose::Util
-* Mouse::Util::TypeConstraints
+* Moose::Util::TypeConstraints
 * Test::Moose
 
 ## Release Notes
