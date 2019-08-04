@@ -58,7 +58,7 @@ jobs:
       - task: CopyFiles@2
         inputs:
           Contents: |
-            out/test/installation/**
+            out/test/**
             package.json
             testFixture/**
             scripts/test-package.js
