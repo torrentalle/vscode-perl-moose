@@ -20,9 +20,10 @@ jobs:
           customCommand: 'run build'
       - script: |
           set -e
-          /usr/bin/Xvfb :10 -ac >> /tmp/Xvfb.out 2>&1 &
+          /usr/bin/Xvfb :10 -ac &
           disown -ar
         displayName: 'Start xvfb'
+        failOnStderr: true
       - task: Npm@1
         displayName: 'Run tests'
         inputs:
