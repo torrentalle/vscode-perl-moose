@@ -23,7 +23,7 @@ jobs:
           sudo /usr/bin/Xvfb :10 -ac &
           sleep 3
           disown -ar
-          chmod 777 /tmp/.X11-unix
+          sudo chmod 777 /tmp/.X11-unix
         displayName: 'Start xvfb'
         failOnStderr: true
       - task: Npm@1
