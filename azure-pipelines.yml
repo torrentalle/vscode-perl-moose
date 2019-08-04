@@ -46,6 +46,7 @@ jobs:
           verbose: false
           customCommand: 'run build:package'
       - task: CopyFiles@2
+        displayName: 'Copy package package'
         inputs:
           Contents: '*.vsix'
           TargetFolder: 'package/'
@@ -57,9 +58,9 @@ jobs:
       - task: CopyFiles@2
         inputs:
           Contents: |
-            out/test/installation
+            out/test/installation/**
             package.json
-            testFixture
+            testFixture/**
           TargetFolder: 'install-tests'
           CleanTargetFolder: true
           OverWrite: true
