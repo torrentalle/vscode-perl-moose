@@ -54,6 +54,19 @@ jobs:
         inputs:
           artifactName: 'package'
           targetPath: 'package'
+      - task: CopyFiles@2
+        inputs:
+          Contents: |
+            out/test/installation
+            package.json
+            testFixture
+          TargetFolder: 'install-tests'
+          CleanTargetFolder: true
+          OverWrite: true
+      - task: PublishPipelineArtifact@0
+        inputs:
+          artifactName: 'install-tests'
+          targetPath: 'install-tests'
   # - job: Install_Windows
   #   dependsOn: Test
   #   pool:
