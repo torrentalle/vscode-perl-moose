@@ -61,6 +61,7 @@ jobs:
             out/test/installation/**
             package.json
             testFixture/**
+            scripts/test-package.js
           TargetFolder: 'install-tests'
           CleanTargetFolder: true
           OverWrite: true
